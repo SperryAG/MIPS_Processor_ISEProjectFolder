@@ -24,7 +24,7 @@ END ADDER_32Bit_Unsigned;
 ARCHITECTURE Behavioral OF ADDER_32Bit_Unsigned IS
 SIGNAL temp : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 BEGIN
-	PROCESS(pc, val)
+	PROCESS(pc)
 	BEGIN
 		temp <= pc + val;
 	END PROCESS;

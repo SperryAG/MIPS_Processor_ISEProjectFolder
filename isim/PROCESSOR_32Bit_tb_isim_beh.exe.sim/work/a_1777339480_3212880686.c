@@ -123,7 +123,7 @@ LAB9:    goto LAB3;
 LAB5:    t4 = (t0 + 1032U);
     t5 = *((char **)t4);
     t6 = *((unsigned char *)t5);
-    t7 = (t6 == (unsigned char)3);
+    t7 = (t6 == (unsigned char)2);
     t1 = t7;
     goto LAB7;
 

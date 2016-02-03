@@ -23,8 +23,8 @@ Compiling package std_logic_1164
 Compiling package processor_pkg
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling package textio
 Compiling package numeric_std
-Compiling package vcomponents
 Compiling architecture behavioral of entity PROG_COUNTER_32Bit [prog_counter_32bit_default]
 Compiling architecture behavioral of entity ADDER_32Bit_Unsigned [adder_32bit_unsigned_default]
 Compiling architecture behavioral of entity ROM_512x32Bit [rom_512x32bit_default]
@@ -38,8 +38,8 @@ Compiling architecture behavioral of entity RAM_512x32Bit [ram_512x32bit_default
 Compiling architecture behavioral of entity PROCESSOR_32Bit [processor_32bit_default]
 Compiling architecture behavior of entity processor_32bit_tb
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 30 VHDL Units
 Built simulation executable C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_isim_beh.exe
-Fuse Memory Usage: 48608 KB
-Fuse CPU Usage: 656 ms
+Fuse Memory Usage: 37392 KB
+Fuse CPU Usage: 640 ms

@@ -31,7 +31,7 @@ ARCHITECTURE Behavioral OF RAM_512x32Bit IS
 BEGIN
 	PROCESS(clk) 
 	BEGIN
-		IF (clk'EVENT AND clk='1') THEN
+		IF (clk'EVENT AND clk='0') THEN
 			IF (we = '1') THEN
 				mem(CONV_INTEGER(addr(8 DOWNTO 0))) <= dataI;
 			ELSE

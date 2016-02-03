@@ -5,10 +5,10 @@
 ----------------------------------------------------------------------------------
 -- LIBRARIES / PACKAGES
 ----------------------------------------------------------------------------------
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use STD.TEXTIO.all;
+use IEEE.NUMERIC_STD.all;
 ----------------------------------------------------------------------------------
 -- ENTITY
 ----------------------------------------------------------------------------------
@@ -21,23 +21,46 @@ END ROM_512x32Bit;
 ----------------------------------------------------------------------------------
 -- ARCHITECTURE
 ----------------------------------------------------------------------------------
-ARCHITECTURE Behavioral OF ROM_512x32Bit IS
-	TYPE mem_array IS ARRAY (0 TO ((2**9)-1)) OF STD_LOGIC_VECTOR(31 DOWNTO 0);
-	SIGNAL mem: mem_array := ((
-		1 => "00100000000111100000000000000110", -- 201E0006 --I1-- addi -- 0 + 6 -> 11110
-		2 => "00100000000011010000000000000101", -- 200D0005 --I2-- addi -- 0 + 5 -> 01101
-		3 => "00000011110011010000100000100000", -- 03CD0820 --I3-- add  -- 11110 (6)  +   01101 (5) -> 00001
-		4 => "00000011110011010001000000100010", -- 03CD1022 --I4-- sub  -- 11110 (6)  -   01101 (5) -> 00010
-		5 => "00000000000000100001100000100100", -- 00021824 --I5-- and  -- 00000 (0) AND  00010 (1) -> 00011
-		6 => "00000000000000100010000000100101", -- 00022025 --I6-- or   -- 00000 (0) OR   00010 (1) -> 00100
-		7 => "00000000010000100010100000100110", -- 00422826 --I7-- xor  -- 00010 (1) XOR  00010 (1) -> 00101
-		8 => "00000000010000000011000000100111", -- 00403027 --I8-- nor  -- 00010 (1) NOR  00000 (0) -> 00110
-		9 => "00000011110011010011100000101000", -- 03CD382A --I9-- slt  -- 11110 (6) slt  01101 (5) -> 00111
-	  10 => "00000011110011010011100000101001", -- 03CD3829 --I10- sltu -- 11110 (6) sltu 01101 (5) -> 01000
-	  11 => "10101100010111100000000000000000", -- AC5E0000 --I11- sw   -- 11110 (6)                -> m[00010 (1) + 0]
-	  12 => "10001100010010010000000000000000", -- 8C490000 --I12- lw   -- m[00010 (1) + 0] (6)     -> 01001
-		OTHERS => (OTHERS => '0')
-	));
-BEGIN
-	dataIO <= mem(CONV_INTEGER(addr(8 DOWNTO 0)));
-END Behavioral;
+architecture Behavioral of ROM_512x32Bit is
+begin
+	-- pragma synthesis_off
+	process is
+		file mem_file: TEXT;
+		variable L: line;
+		variable ch: character;
+		variable i, index, result: integer;
+		type ramtype is array (511 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
+		variable mem: ramtype;
+	begin
+		-- initialize memory from file
+		for i in 0 to 511 loop -- set all contents low
+			mem(i) := (others => '0');
+		end loop;
+
+		index := 0;
+		FILE_OPEN (mem_file, "memfile.dat", READ_MODE);
+		while not endfile(mem_file) loop
+		readline(mem_file, L);
+		result := 0;
+
+		for i in 1 to 8 loop
+			read (L, ch);
+			if '0' <= ch and ch <= '9' then
+			result := character'pos(ch) - character'pos('0');
+			elsif 'a' <= ch and ch <= 'f' then
+			result := character'pos(ch) - character'pos('a')+10;
+			else report "Format error on line" & integer'
+			image(index) severity error;
+			end if;
+			mem(index)(35-i*4 downto 32-i*4) := std_logic_vector(to_unsigned(result,4));
+			end loop;
+			index := index + 1;
+		end loop;
+		-- read memory
+		loop
+			dataIO <= mem(to_integer(unsigned(addr(8 DOWNTO 0))));
+			wait on addr;
+		end loop;
+	end process;
+	-- pragma synthesis_on
+end;

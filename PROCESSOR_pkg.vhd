@@ -36,13 +36,6 @@ PACKAGE processor_pkg IS
 		);
 	END COMPONENT;
 
-    COMPONENT imem -- instruction memory
-		PORT(
-            a  : IN  STD_LOGIC_VECTOR(5 downto 0);
-            rd : OUT STD_LOGIC_VECTOR(31 downto 0)
-        );
-	END COMPONENT;
-
     COMPONENT MUX_2to1_5Bit
 		PORT( 
 			  d0  : IN  STD_LOGIC_VECTOR(4 DOWNTO 0);

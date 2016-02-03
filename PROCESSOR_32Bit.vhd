@@ -85,19 +85,12 @@ BEGIN
 		o   => w01
 	);
 	
-	--Instantiate ROM
+	-- Instantiate ROM
 	Inst_ROM_512x32Bit: ROM_512x32Bit 
 	PORT MAP(
 		addr => w02,
 		dataIO => w03
 	);
-	
-	-- Instantiate Preload
-	--Inst_imem : imem
-	--PORT MAP(
-	--	a => w02(5 DOWNTO 0),
-	--	rd => w03
-	--);
 	
    --Instantiate MUXA
 	Inst_MUX_2to1_5Bit_A: MUX_2to1_5Bit 
