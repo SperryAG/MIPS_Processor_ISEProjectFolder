@@ -8,8 +8,7 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
-LIBRARY UNISIM;
-USE UNISIM.VCOMPONENTS.ALL;
+
 ----------------------------------------------------------------------------------
 -- ENTITY
 ----------------------------------------------------------------------------------
@@ -28,123 +27,122 @@ END ALU_32BIT;
 ----------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF ALU_32BIT IS
 SIGNAL wire : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
-SIGNAL Jo : STD_LOGIC;
-SIGNAL Bo : STD_LOGIC;
+SIGNAL bo   : STD_LOGIC := '0';
+SIGNAL jo   : STD_LOGIC := '0';
 BEGIN
-	process(Func_in)
-	begin
-	case Func_in is
-		when "100000" =>
-			wire <= STD_LOGIC_VECTOR(unsigned(A_in) + unsigned(B_in));
-			Jo <= '0';
-			Bo <= '0';
-		when "100001" =>
-			wire <= STD_LOGIC_VECTOR(unsigned(A_in) + unsigned(B_in));
-			Jo <= '0';
-			Bo <= '0';		
-		when "100010" =>
-			wire <= STD_LOGIC_VECTOR(unsigned(A_in) - unsigned(B_in));
-			Jo <= '0';
-			Bo <= '0';
-		when "100011"	=>
-			wire <= STD_LOGIC_VECTOR(unsigned(A_in) - unsigned(B_in));
-			Jo <= '0';
-			Bo <= '0';
-		when "100100" =>
-			wire <=  A_in AND B_in;
-			Jo <= '0';
-			Bo <= '0';
-		when "100101" =>
-			wire <=  A_in OR B_in;
-			Jo <= '0';
-			Bo <= '0';
-		when "100110" =>
-			wire <= A_in XOR B_in;
-			Jo <= '0';
-			Bo <= '0';
-		when "100111" =>
-			wire <= A_in NOR B_in;
-			Jo <= '0';
-			Bo <= '0';
-		when "101000" =>
-			if signed(A_in) < signed(B_in) then
-				wire <= "00000000000000000000000000000001";
-			else
-				wire <= (OTHERS => '0');
-			end if;
-				Jo <= '0';
-				Bo <= '0';
-		when "101001" =>
-			if unsigned(A_in) < unsigned(B_in) then
-				wire <= "00000000000000000000000000000001";
-			else
-				wire <= (OTHERS => '0');
-			end if;
-				Jo <= '0';
-				Bo <= '0';
-		when "111000" =>
-			wire <= A_in; --BRANCH LESS THAN ZERO (A<0)
-			Jo <= '0';
-			if to_integer(signed(A_in)) < 0 then
-				Bo <= '1'; --MAY NEED TO CONVERT TO INT
-			else
-				Bo <= '0';
-			end if;
-		when "111001" =>
-			wire <= A_in; --BRANCH GREATER THAN OR EQUAL TO ZERO (A >= 0)
-			Jo <= '0';
-			if to_integer(signed(A_in)) >= 0 then 
-				Bo <= '1';
-			else
-				Bo <= '0';
-			end if;	
-		when "111010" =>
-			wire <= A_in; --JUMP
-			Jo <= '1';
-			Bo <= '0';
-		when "111011" =>
-			wire <= A_in; --JUMP
-			Jo <= '1';
-			Bo <= '0';
-		when "111100" =>
-			wire <= A_in; --Branch Equal
-			Jo <= '0';
-			if A_in = B_in then
-				Bo <= '1';
-			else
-				Bo <= '0';
-			end if;
-		when "111101" =>
-			wire <= A_in; --Branch Not Equal
-			Jo <= '0';
-			if A_in /= B_in then
-				Bo <= '1';
-			else
-				Bo <= '0';
-			end if;
-		when "111110" =>
-			wire <= A_in; --Branch less Than or Equal to Zero
-			Jo <= '0';
-			if to_integer(signed(A_in)) <= 0 then
-				Bo <= '1';
-			else
-				Bo <= '0';
-			end if;
-		when "111111" =>
-			wire <= A_in; --Branch Greater Than Zero
-			Jo <= '0';
-			if to_integer(signed(A_in)) > 0 then
-				Bo <= '1';
-			else
-				Bo <= '0';
-			end if;
-		when others =>
+    PROCESS(Func_in, A_in, B_in) 
+        BEGIN --TODO: branch_out, Jump_out
+		IF Func_in(5 DOWNTO 3) = "100" THEN
+			bo <= '0';
+			jo <= '0';
+			IF Func_in(2 DOWNTO 0) = "000" OR Func_in(2 DOWNTO 0) = "001" THEN 
+				wire <= STD_LOGIC_VECTOR(unsigned(A_in) + unsigned(B_in));
+			ELSIF Func_in(2 DOWNTO 0) = "010" OR Func_in(2 DOWNTO 0) = "010" THEN
+				wire <= STD_LOGIC_VECTOR(unsigned(A_in) - unsigned(B_in));
+			ELSIF Func_in(2 DOWNTO 0) = "100" THEN
+				wire <=  A_in AND B_in;
+			ELSIF Func_in(2 DOWNTO 0) = "101" THEN
+				wire <=  A_in OR B_in;
+			ELSIF Func_in(2 DOWNTO 0) = "110" THEN
+				wire <=  A_in XOR B_in;
+			ELSIF Func_in(2 DOWNTO 0) = "111" THEN
+				wire <=  A_in NOR B_in;
+			END IF;
+		ELSIF Func_in(5 DOWNTO 3) = "101" THEN
+			bo <= '0';
+			jo <= '0';
+			IF Func_in(2 DOWNTO 0) = "000" THEN
+				IF signed(A_in) < signed(B_in) THEN
+					wire <= "00000000000000000000000000000001";
+				ELSE
+					wire <= (OTHERS => '0');
+				END IF;
+			ELSIF Func_in(2 DOWNTO 0) = "001" THEN 
+				IF unsigned(A_in) < unsigned(B_in) THEN
+					wire <= "00000000000000000000000000000001";
+				ELSE
+					wire <= (OTHERS => '0');
+				END IF;
+			END IF;
+		ELSIF Func_in(5 DOWNTO 3) = "111" THEN
+			wire <= A_in;
+			IF Func_in(2 DOWNTO 0) = "010" OR Func_in(2 DOWNTO 0) = "011" THEN
+				jo <= '1';
+			ELSE
+				jo <= '0';
+			END IF;
+			IF Func_in(2 DOWNTO 0) = "000" THEN 
+				IF unsigned(A_in) < 0 THEN
+					bo <= '1';
+				ELSE
+					bo <= '0';
+				END IF;
+			ELSIF Func_in(2 DOWNTO 0) = "001" THEN
+				IF unsigned(A_in) >= 0 THEN
+					bo <= '1';
+				ELSE
+					bo <= '0';
+				END IF;
+			ELSIF Func_in(2 DOWNTO 0) = "010" OR Func_in(2 DOWNTO 0) = "011" THEN
+				bo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "100" THEN
+				IF unsigned(A_in) = unsigned(B_in) THEN
+					bo <= '1';
+				ELSE
+					bo <= '0';
+				END IF;
+			ELSIF Func_in(2 DOWNTO 0) = "101" THEN
+				IF unsigned(A_in) = unsigned(B_in) THEN
+					bo <= '0';
+				ELSE
+					bo <= '1';
+				END IF;
+			ELSIF Func_in(2 DOWNTO 0) = "110" THEN
+				IF unsigned(A_in) <= 0 THEN
+					bo <= '1';
+				ELSE
+					bo <= '0';
+				END IF;
+			ELSIF Func_in(2 DOWNTO 0) = "111" THEN
+				IF unsigned(A_in) > 0 THEN
+					bo <= '1';
+				ELSE
+					bo <= '0';
+				END IF;
+			END IF; 
+		ELSIF Func_in(5 DOWNTO 3) = "000" THEN
+			IF Func_in(2 DOWNTO 0) = "100" THEN
+				wire <= std_logic_vector(unsigned(A_in) sll to_integer(unsigned(B_in)));
+				bo <= '0';
+				jo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "000" THEN
+				wire <= std_logic_vector(unsigned(A_in) sll to_integer(unsigned(B_in)));
+				bo <= '0';
+				jo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "110" THEN
+				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
+				bo <= '0';
+				jo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "011" THEN
+				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
+				bo <= '0';
+				jo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "111" THEN
+				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
+				bo <= '0';
+				jo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "011" THEN
+				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
+				bo <= '0';
+				jo <= '0';
+			END IF;
+		ELSE
+			bo <= '0';
+			jo <= '0';
 			wire <= (OTHERS => '0');
-	end case;
-	end process;
+		END IF;
+    END PROCESS;
 	 O_out <= wire;
 	 Branch_out <= bo;
 	 Jump_out <= jo;
-
 END behavioral;
-

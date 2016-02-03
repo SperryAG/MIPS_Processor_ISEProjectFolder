@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/MUX_2to1_5Bit.vhd";
+static const char *ng0 = "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/MUX_2to1_5Bit.vhd";
 
 
 
