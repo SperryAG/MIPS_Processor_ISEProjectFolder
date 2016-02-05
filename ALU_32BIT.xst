@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/xst"
+elaborate
+-ifn ALU_32BIT.prj
+-ifmt mixed
