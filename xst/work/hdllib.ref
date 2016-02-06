@@ -1,5 +1,5 @@
 EN prog_counter_32bit NULL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROG_COUNTER_32Bit.vhd sub00/vhpl01 1454528744
-EN alu_32bit NULL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd sub00/vhpl17 1454535311
+EN alu_32bit NULL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd sub00/vhpl17 1454729463
 AR ram_512x32bit behavioral C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/RAM_512x32Bit.vhd sub00/vhpl20 1454528763
 EN adder_32bit_unsigned NULL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ADDER_32Bit_Unsigned.vhd sub00/vhpl03 1454528746
 AR adder_32bit_unsigned behavioral C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ADDER_32Bit_Unsigned.vhd sub00/vhpl04 1454528747
@@ -20,4 +20,4 @@ EN mux_2to1_32bit NULL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/MU
 EN controller_32bit NULL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONTROLLER_32Bit.vhd sub00/vhpl09 1454528752
 EN rom_512x32bit NULL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ROM_512x32Bit.vhd sub00/vhpl05 1454528748
 EN processor_32bit NULL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit.vhd sub00/vhpl21 1454528764
-AR alu_32bit behavioral C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd sub00/vhpl18 1454528761
+AR alu_32bit behavioral C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd sub00/vhpl18 1454729464

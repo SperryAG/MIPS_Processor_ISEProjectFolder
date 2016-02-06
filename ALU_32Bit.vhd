@@ -8,7 +8,7 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
-
+use ieee.std_logic_signed.all;
 ----------------------------------------------------------------------------------
 -- ENTITY
 ----------------------------------------------------------------------------------
@@ -123,16 +123,16 @@ BEGIN
 				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
 				bo <= '0';
 				jo <= '0';
-			ELSIF Func_in(2 DOWNTO 0) = "011" THEN
+			ELSIF Func_in(2 DOWNTO 0) = "010" THEN
 				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
 				bo <= '0';
 				jo <= '0';
 			ELSIF Func_in(2 DOWNTO 0) = "111" THEN
-				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
+				wire <=  SHR(A_in,B_in);
 				bo <= '0';
 				jo <= '0';
 			ELSIF Func_in(2 DOWNTO 0) = "011" THEN
-				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
+				wire <=  SHR(A_in,B_in);
 				bo <= '0';
 				jo <= '0';
 			END IF;

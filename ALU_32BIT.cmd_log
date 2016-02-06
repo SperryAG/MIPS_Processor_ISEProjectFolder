@@ -1,0 +1,2 @@
+vhdtdtfi -prj testgate -o C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32BIT.tfi -module ALU_32BIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work ALU_32Bit.vhd 
+vhdtdtfi -prj testgate -o C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32BIT.tfi -module ALU_32BIT -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work ALU_32Bit.vhd 

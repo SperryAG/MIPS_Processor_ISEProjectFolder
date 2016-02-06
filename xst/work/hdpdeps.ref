@@ -6,13 +6,14 @@ EN work/ADDER_32Bit_Unsigned 1454528746 \
 AR work/ADDER_32Bit_Unsigned/Behavioral 1454528747 \
       FL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ADDER_32Bit_Unsigned.vhd \
       EN work/ADDER_32Bit_Unsigned 1454528746
-FL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd 2016/02/03.11:41:01 P.20131013
-EN work/ALU_32BIT 1454528760 \
+FL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd 2016/02/05.19:31:02 P.20131013
+EN work/ALU_32BIT 1454729463 \
       FL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/ALU_32BIT/Behavioral 1454528761 \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_SIGNED 1381692178
+AR work/ALU_32BIT/Behavioral 1454729464 \
       FL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd \
-      EN work/ALU_32BIT 1454528760
+      EN work/ALU_32BIT 1454729463
 FL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONTROLLER_32Bit.vhd 2016/02/03.11:37:20 P.20131013
 EN work/CONTROLLER_32Bit 1454528752 \
       FL C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONTROLLER_32Bit.vhd \
