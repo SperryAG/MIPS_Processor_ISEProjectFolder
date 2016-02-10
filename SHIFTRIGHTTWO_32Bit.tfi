@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+SHIFTRIGHTTWO_32Bit instance_name (
+    .i(i), 
+    .o(o)
+    );
+
+

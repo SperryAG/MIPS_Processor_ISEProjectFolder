@@ -12,15 +12,24 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ----------------------------------------------------------------------------------
 ENTITY CONTROLLER_32Bit IS
 	PORT(
-		Func       : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
-		Op         : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
-		MemToReg   : OUT STD_LOGIC;
-		MemWrite   : OUT STD_LOGIC;
-		Branch     : OUT STD_LOGIC;
-		ALUControl : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
-		ALUSrc     : OUT STD_LOGIC;
-		RegDst     : OUT STD_LOGIC;
-		RegWrite   : OUT STD_LOGIC
+		Func              : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
+		Op                : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
+		JALControl        : OUT STD_LOGIC;
+		RegDst            : OUT STD_LOGIC;
+	   JALAddrControl    : OUT STD_LOGIC;
+		JALDataControl    : OUT STD_LOGIC;
+		ShiftValueControl : OUT STD_LOGIC;
+		LoadControl       : OUT STD_LOGIC;
+		JRControl         : OUT STD_LOGIC;
+		JumpOrJRControl   : OUT STD_LOGIC;
+		LUIControl        : OUT STD_LOGIC;
+		Branch            : OUT STD_LOGIC;
+		MemToReg          : OUT STD_LOGIC;
+		MemWrite          : OUT STD_LOGIC;
+		DSize             : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+		ALUControl        : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+		ALUSrc            : OUT STD_LOGIC;	
+		RegWrite          : OUT STD_LOGIC
 	);
 END CONTROLLER_32Bit;
 ----------------------------------------------------------------------------------

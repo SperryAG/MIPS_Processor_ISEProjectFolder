@@ -46,14 +46,14 @@ begin
 		for i in 1 to 8 loop
 			read (L, ch);
 			if '0' <= ch and ch <= '9' then
-			result := character'pos(ch) - character'pos('0');
+				result := character'pos(ch) - character'pos('0');
 			elsif 'a' <= ch and ch <= 'f' then
-			result := character'pos(ch) - character'pos('a')+10;
+				result := character'pos(ch) - character'pos('a')+10;
 			else report "Format error on line" & integer'
-			image(index) severity error;
+				image(index) severity error;
 			end if;
 			mem(index)(35-i*4 downto 32-i*4) := std_logic_vector(to_unsigned(result,4));
-			end loop;
+		end loop;
 			index := index + 1;
 		end loop;
 		-- read memory

@@ -17,24 +17,32 @@ PACKAGE processor_pkg IS
 			  A_in       : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			  B_in       : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			  O_out      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-			  Branch_out : OUT STD_LOGIC;
-			  Jump_out   : OUT STD_LOGIC 
+			  Branch_out : OUT STD_LOGIC
 		 );
 	END COMPONENT;
 
 	COMPONENT CONTROLLER_32Bit
-		PORT(
-			Func       : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
-			Op         : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
-			MemToReg   : OUT STD_LOGIC;
-			MemWrite   : OUT STD_LOGIC;
-			Branch     : OUT STD_LOGIC;
-			ALUControl : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
-			ALUSrc     : OUT STD_LOGIC;
-			RegDst     : OUT STD_LOGIC;
-			RegWrite   : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	   PORT(
+            Func              : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
+            Op                : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
+            JALControl        : OUT STD_LOGIC;
+            RegDst            : OUT STD_LOGIC;
+            JALAddrControl    : OUT STD_LOGIC;
+            JALDataControl    : OUT STD_LOGIC;
+            ShiftValueControl : OUT STD_LOGIC;
+            LoadControl       : OUT STD_LOGIC;
+            JRControl         : OUT STD_LOGIC;
+            JumpOrJRControl   : OUT STD_LOGIC;
+            LUIControl        : OUT STD_LOGIC;
+            Branch            : OUT STD_LOGIC;
+            MemToReg          : OUT STD_LOGIC;
+            MemWrite          : OUT STD_LOGIC;
+            DSize             : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+            ALUControl        : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+            ALUSrc            : OUT STD_LOGIC;	
+            RegWrite          : OUT STD_LOGIC
+	   );
+    END COMPONENT;
 
     COMPONENT MUX_2to1_5Bit
 		PORT( 
@@ -62,9 +70,10 @@ PACKAGE processor_pkg IS
 		);
 	END COMPONENT;
 
-	COMPONENT RAM_512x32Bit
+	COMPONENT RAM_512x8Bit
 		PORT(
 			clk   : IN  STD_LOGIC;
+            dsize : IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
 			we    : IN  STD_LOGIC;
 			addr  : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			dataI : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -99,5 +108,49 @@ PACKAGE processor_pkg IS
 			  o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 		);
 	END COMPONENT;
+    
+    COMPONENT SHIFTLEFT_26Bit
+		PORT( 
+			  i : IN  STD_LOGIC_VECTOR(25 DOWNTO 0);
+			  o : OUT STD_LOGIC_VECTOR(25 DOWNTO 0)
+		);
+	END COMPONENT;
+    
+    COMPONENT CONCATENATE_26to32Bit
+        PORT(
+            in_main : IN  STD_LOGIC_VECTOR(25 DOWNTO 0);
+		    in_conc : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
+            o       : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+	   );
+    END COMPONENT;
+    
+    COMPONENT SHIFTRIGHTTWO_32Bit
+        PORT(
+            i : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+            o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 
+        );
+    END COMPONENT;
+    
+    COMPONENT AND_2to1_1Bit
+        PORT(
+            a  : IN  STD_LOGIC;
+            b  : IN  STD_LOGIC;
+            o  : OUT STD_LOGIC 
+        );
+    END COMPONENT;
+    
+    COMPONENT SHIFTANDEXTEND_32Bit
+        PORT(
+            i : IN std_logic_vector(31 DOWNTO 0);
+            o : OUT std_logic_vector(31 DOWNTO 0)
+        );
+    END COMPONENT;
+    
+    COMPONENT SPLITTER_32Bit
+        PORT(
+            i : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+            o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 
+        );
+    END COMPONENT;
 
 END processor_pkg;
