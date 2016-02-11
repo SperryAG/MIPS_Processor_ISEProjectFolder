@@ -1,5 +1,1 @@
-<<<<<<< HEAD
--intstyle "ise" -incremental -o "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_isim_beh.exe" -prj "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_beh.prj" "work.PROCESSOR_32Bit_tb" 
-=======
--intstyle "ise" -incremental -o "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_isim_beh.exe" -prj "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_beh.prj" "work.PROCESSOR_32Bit_tb" 
->>>>>>> origin/master
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONCATENATE_26to32Bit_TF_isim_beh.exe" -prj "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONCATENATE_26to32Bit_TF_beh.prj" "work.CONCATENATE_26to32Bit_TF" "work.glbl" 

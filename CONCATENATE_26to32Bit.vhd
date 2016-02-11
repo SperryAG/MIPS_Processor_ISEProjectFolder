@@ -7,6 +7,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
 ----------------------------------------------------------------------------------
 -- ENTITY
 ----------------------------------------------------------------------------------
@@ -21,9 +23,11 @@ END CONCATENATE_26to32Bit;
 -- ARCHITECTURE
 ----------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF CONCATENATE_26to32Bit IS
-
+SIGNAL wire : STD_LOGIC_VECTOR(31 DOWNTO 0);
 BEGIN
-
-
+	PROCESS(in_main,in_conc) BEGIN
+		wire <= in_main & in_conc;
+	END PROCESS;
+		o <= wire;
 END Behavioral;
 

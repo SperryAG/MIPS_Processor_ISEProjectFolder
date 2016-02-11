@@ -9,6 +9,7 @@ LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
 ----------------------------------------------------------------------------------
 -- ENTITY
 ----------------------------------------------------------------------------------
@@ -35,10 +36,16 @@ BEGIN
 		IF (clk'EVENT AND clk='0') THEN
 			IF (we = '1') THEN
 				mem(CONV_INTEGER(addr(8 DOWNTO 0))) <= dataI(7 DOWNTO 0);
-				IF dsize = "01" OR "10" OR "11" THEN
+				IF dsize = "01" THEN
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))+1) <= dataI(15 DOWNTO 8);			
+				ELSIF dsize = "10" THEN
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))+1) <= dataI(15 DOWNTO 8);
+				ELSIF dsize = "11" THEN
 					mem(CONV_INTEGER(addr(8 DOWNTO 0))+1) <= dataI(15 DOWNTO 8);
 				END IF;
-				IF dsize = "10" OR "11" THEN
+				IF dsize = "10" THEN
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))+2) <= dataI(23 DOWNTO 16);
+				ELSIF dsize = "11" THEN
 					mem(CONV_INTEGER(addr(8 DOWNTO 0))+2) <= dataI(23 DOWNTO 16);
 				END IF;
 				IF dsize = "11" THEN
@@ -47,10 +54,16 @@ BEGIN
 			ELSE
 				temp <= (OTHERS => '0');
 				temp(7 DOWNTO 0) <= mem(CONV_INTEGER(addr(8 DOWNTO 0)));
-				IF dsize = "01" OR "10" OR "11" THEN
+				IF dsize = "01" THEN
+					temp(15 DOWNTO 8) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+1);
+				ELSIF dsize = "10" THEN
+					temp(15 DOWNTO 8) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+1);
+				ELSIF dsize = "11" THEN
 					temp(15 DOWNTO 8) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+1);
 				END IF;
-				IF dsize = "10" OR "11" THEN
+				IF dsize = "10" THEN
+					temp(23 DOWNTO 16) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+2);
+				ELSIF dsize = "11" THEN
 					temp(23 DOWNTO 16) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+2);
 				END IF;
 				IF dsize = "11" THEN
