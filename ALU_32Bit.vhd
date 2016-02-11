@@ -113,27 +113,27 @@ BEGIN
 			IF Func_in(2 DOWNTO 0) = "100" THEN
 				wire <= std_logic_vector(unsigned(A_in) sll to_integer(unsigned(B_in)));
 				bo <= '0';
-				--jo <= '0';
+				jo <= '0';
 			ELSIF Func_in(2 DOWNTO 0) = "000" THEN
 				wire <= std_logic_vector(unsigned(A_in) sll to_integer(unsigned(B_in)));
 				bo <= '0';
-				--jo <= '0';
+				jo <= '0';
 			ELSIF Func_in(2 DOWNTO 0) = "110" THEN
 				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
 				bo <= '0';
-				--jo <= '0';
-			ELSIF Func_in(2 DOWNTO 0) = "011" THEN
+				jo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "010" THEN
 				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
 				bo <= '0';
-				--jo <= '0';
+				jo <= '0';
 			ELSIF Func_in(2 DOWNTO 0) = "111" THEN
-				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
+				wire <=  SHR(A_in,B_in);
 				bo <= '0';
-				--jo <= '0';
+				jo <= '0';
 			ELSIF Func_in(2 DOWNTO 0) = "011" THEN
-				wire <= std_logic_vector(unsigned(A_in) srl to_integer(unsigned(B_in)));
+				wire <=  SHR(A_in,B_in);
 				bo <= '0';
-				--jo <= '0';
+				jo <= '0';
 			END IF;
 		ELSE
 			bo <= '0';
