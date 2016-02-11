@@ -8,6 +8,8 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
+USE IEEE.std_logic_arith.ALL;
+use ieee.std_logic_unsigned.all; 
 
 ----------------------------------------------------------------------------------
 -- ENTITY
@@ -18,7 +20,8 @@ ENTITY ALU_32BIT IS
         A_in       : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
         B_in       : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
         O_out      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-        Branch_out : OUT STD_LOGIC
+        Branch_out : OUT STD_LOGIC;
+		  Jump_out	 : OUT STD_LOGIC
     );
 END ALU_32BIT;
 ----------------------------------------------------------------------------------
@@ -27,13 +30,13 @@ END ALU_32BIT;
 ARCHITECTURE Behavioral OF ALU_32BIT IS
 SIGNAL wire : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 SIGNAL bo   : STD_LOGIC := '0';
---SIGNAL jo   : STD_LOGIC := '0';
+SIGNAL jo   : STD_LOGIC := '0';
 BEGIN
     PROCESS(Func_in, A_in, B_in) 
         BEGIN --TODO: branch_out, Jump_out
 		IF Func_in(5 DOWNTO 3) = "100" THEN
 			bo <= '0';
-			--jo <= '0';
+			jo <= '0';
 			IF Func_in(2 DOWNTO 0) = "000" OR Func_in(2 DOWNTO 0) = "001" THEN 
 				wire <= STD_LOGIC_VECTOR(unsigned(A_in) + unsigned(B_in));
 			ELSIF Func_in(2 DOWNTO 0) = "010" OR Func_in(2 DOWNTO 0) = "010" THEN
@@ -49,7 +52,7 @@ BEGIN
 			END IF;
 		ELSIF Func_in(5 DOWNTO 3) = "101" THEN
 			bo <= '0';
-			--jo <= '0';
+			jo <= '0';
 			IF Func_in(2 DOWNTO 0) = "000" THEN
 				IF signed(A_in) < signed(B_in) THEN
 					wire <= "00000000000000000000000000000001";
@@ -66,9 +69,9 @@ BEGIN
 		ELSIF Func_in(5 DOWNTO 3) = "111" THEN
 			wire <= A_in;
 			IF Func_in(2 DOWNTO 0) = "010" OR Func_in(2 DOWNTO 0) = "011" THEN
-				--jo <= '1';
+				jo <= '1';
 			ELSE
-				--jo <= '0';
+				jo <= '0';
 			END IF;
 			IF Func_in(2 DOWNTO 0) = "000" THEN 
 				IF unsigned(A_in) < 0 THEN
@@ -137,11 +140,11 @@ BEGIN
 			END IF;
 		ELSE
 			bo <= '0';
-			--jo <= '0';
+			jo <= '0';
 			wire <= (OTHERS => '0');
 		END IF;
     END PROCESS;
 	 O_out <= wire;
 	 Branch_out <= bo;
-	 --Jump_out <= jo;
+	 Jump_out <= jo;
 END behavioral;

@@ -7,6 +7,8 @@
 ----------------------------------------------------------------------------------
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
 ----------------------------------------------------------------------------------
 -- ENTITY
 ----------------------------------------------------------------------------------
@@ -20,9 +22,11 @@ END SHIFTRIGHTTWO_32Bit;
 -- ARCHITECTURE
 ----------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF SHIFTRIGHTTWO_32Bit IS
-
+SIGNAL wire : STD_LOGIC_VECTOR(31 DOWNTO 0);
 BEGIN
-
-
+	PROCESS(i)BEGIN
+		wire <= std_logic_vector(unsigned(i) srl 2);
+	END PROCESS;
+	o <= wire;
 END Behavioral;
 

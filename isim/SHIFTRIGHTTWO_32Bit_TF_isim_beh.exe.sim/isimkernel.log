@@ -1,0 +1,29 @@
+Command line:
+   SHIFTRIGHTTWO_32Bit_TF_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52346
+
+Wed Feb 10 21:18:01 2016
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 852.845 Meg
+
+ Total Signals          : 17
+ Total Nets             : 141
+ Total Signal Drivers   : 9
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 11
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 736
+Total Line Count : 22
+
+ Total Simulation Time: 0.28125 sec
+
+ Current Memory Usage: 852.845 Meg
+
+Wed Feb 10 21:18:15 2016
+

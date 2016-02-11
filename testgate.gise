@@ -22,83 +22,207 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="testgate.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CONCATENATE_26to32Bit_TF_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CONCATENATE_26to32Bit_TF_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CONCATENATE_26to32Bit_TF_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="MUX_2to1_32Bit_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="PROCESSOR_32Bit.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="PROCESSOR_32Bit.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit.prj"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PROCESSOR_32Bit.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PROCESSOR_32Bit.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PROCESSOR_32Bit.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROCESSOR_32Bit_envsettings.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PROCESSOR_32Bit_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROCESSOR_32Bit_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_tb_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_tb_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PROCESSOR_32Bit_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ROM_512x32Bit_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ROM_512x32Bit_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SHIFTLEFT_26Bit_TF_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SHIFTLEFT_26Bit_TF_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="SHIFTRIGHTTWO_32Bit.tfi"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SHIFTRIGHTTWO_32Bit_TF_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SHIFTRIGHTTWO_32Bit_TF_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SHIFTRIGHTTWO_32Bit_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SIGNEXTEND_16to32Bit.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1454493460" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1454493460">
+    <transform xil_pn:end_ts="1455167043" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1455167043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1454493460" xil_pn:in_ck="341231214433894761" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1454493460">
+    <transform xil_pn:end_ts="1455218765" xil_pn:in_ck="2448606017613712326" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1455218765">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="ADDER_32Bit_Unsigned.vhd"/>
+      <outfile xil_pn:name="ALU_32Bit.vhd"/>
+      <outfile xil_pn:name="AND_2to1_1Bit.vhd"/>
+      <outfile xil_pn:name="CONCATENATE_26to32Bit.vhd"/>
+      <outfile xil_pn:name="CONCATENATE_26to32Bit_TF.v"/>
+      <outfile xil_pn:name="CONTROLLER_32Bit.vhd"/>
+      <outfile xil_pn:name="MUX_2to1_32Bit.vhd"/>
+      <outfile xil_pn:name="MUX_2to1_32Bit_tb.vhd"/>
+      <outfile xil_pn:name="MUX_2to1_5Bit.vhd"/>
+      <outfile xil_pn:name="MUX_2to1_5Bit_tb.v"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit.vhd"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit_tb.vhd"/>
+      <outfile xil_pn:name="PROCESSOR_pkg.vhd"/>
+      <outfile xil_pn:name="PROG_COUNTER_32Bit.vhd"/>
+      <outfile xil_pn:name="RAM_512x8Bit.vhd"/>
+      <outfile xil_pn:name="REGFILE_32BitX5Bit.vhd"/>
+      <outfile xil_pn:name="ROM_512x32Bit.vhd"/>
+      <outfile xil_pn:name="SHIFTANDEXTEND_32Bit.vhd"/>
+      <outfile xil_pn:name="SHIFTLEFT_26Bit_TF.v"/>
+      <outfile xil_pn:name="SHIFTRIGHTTWO_32Bit.vhd"/>
+      <outfile xil_pn:name="SHIFTRIGHTTWO_32Bit_TF.v"/>
+      <outfile xil_pn:name="SIGNEXTEND_16to32Bit.vhd"/>
+      <outfile xil_pn:name="SIGNEXTEND_16to32Bit_tb.vhd"/>
+      <outfile xil_pn:name="SPLITTER_32Bit.vhd"/>
+      <outfile xil_pn:name="ShiftLeft_26Bit.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1454528934" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="648866251778359608" xil_pn:start_ts="1454528934">
+    <transform xil_pn:end_ts="1455218765" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2676214008809509469" xil_pn:start_ts="1455218765">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1454528934" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3450490909046791616" xil_pn:start_ts="1454528934">
+    <transform xil_pn:end_ts="1455218765" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5230969367490200459" xil_pn:start_ts="1455218765">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1454492995" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-931434034696855075" xil_pn:start_ts="1454492995">
+    <transform xil_pn:end_ts="1455167043" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-931434034696855075" xil_pn:start_ts="1455167043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1454492995" xil_pn:in_ck="341231214433894761" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1454492995">
+    <transform xil_pn:end_ts="1455218765" xil_pn:in_ck="2448606017613712326" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1455218765">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="ADDER_32Bit_Unsigned.vhd"/>
+      <outfile xil_pn:name="ALU_32Bit.vhd"/>
+      <outfile xil_pn:name="AND_2to1_1Bit.vhd"/>
+      <outfile xil_pn:name="CONCATENATE_26to32Bit.vhd"/>
+      <outfile xil_pn:name="CONCATENATE_26to32Bit_TF.v"/>
+      <outfile xil_pn:name="CONTROLLER_32Bit.vhd"/>
+      <outfile xil_pn:name="MUX_2to1_32Bit.vhd"/>
+      <outfile xil_pn:name="MUX_2to1_32Bit_tb.vhd"/>
+      <outfile xil_pn:name="MUX_2to1_5Bit.vhd"/>
+      <outfile xil_pn:name="MUX_2to1_5Bit_tb.v"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit.vhd"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit_tb.vhd"/>
+      <outfile xil_pn:name="PROCESSOR_pkg.vhd"/>
+      <outfile xil_pn:name="PROG_COUNTER_32Bit.vhd"/>
+      <outfile xil_pn:name="RAM_512x8Bit.vhd"/>
+      <outfile xil_pn:name="REGFILE_32BitX5Bit.vhd"/>
+      <outfile xil_pn:name="ROM_512x32Bit.vhd"/>
+      <outfile xil_pn:name="SHIFTANDEXTEND_32Bit.vhd"/>
+      <outfile xil_pn:name="SHIFTLEFT_26Bit_TF.v"/>
+      <outfile xil_pn:name="SHIFTRIGHTTWO_32Bit.vhd"/>
+      <outfile xil_pn:name="SHIFTRIGHTTWO_32Bit_TF.v"/>
+      <outfile xil_pn:name="SIGNEXTEND_16to32Bit.vhd"/>
+      <outfile xil_pn:name="SIGNEXTEND_16to32Bit_tb.vhd"/>
+      <outfile xil_pn:name="SPLITTER_32Bit.vhd"/>
+      <outfile xil_pn:name="ShiftLeft_26Bit.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1454528937" xil_pn:in_ck="341231214433894761" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-420855118251302204" xil_pn:start_ts="1454528934">
+    <transform xil_pn:end_ts="1455218782" xil_pn:in_ck="2448606017613712326" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3021052861302180317" xil_pn:start_ts="1455218765">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="CONCATENATE_26to32Bit_TF_beh.prj"/>
+      <outfile xil_pn:name="CONCATENATE_26to32Bit_TF_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1454528937" xil_pn:in_ck="177306840170370089" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7189468064970320249" xil_pn:start_ts="1454528937">
+    <transform xil_pn:end_ts="1455218783" xil_pn:in_ck="6682280295247987772" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2692133729241445978" xil_pn:start_ts="1455218782">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="CONCATENATE_26to32Bit_TF_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1455164041" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1455164041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455164041" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8600456386423165736" xil_pn:start_ts="1455164041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455164041" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-931434034696855075" xil_pn:start_ts="1455164041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455164041" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1455164041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455164041" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3487292240663741872" xil_pn:start_ts="1455164041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455164041" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="4579864356909105523" xil_pn:start_ts="1455164041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455164041" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5347286637238533351" xil_pn:start_ts="1455164041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455166629" xil_pn:in_ck="8713522313455680783" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8100751827441564378" xil_pn:start_ts="1455166622">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit.lso"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit.prj"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit.syr"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit.xst"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit_stx_beh.prj"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit_tb_stx_beh.prj"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit_vhdl.prj"/>
+      <outfile xil_pn:name="PROCESSOR_32Bit_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1455164056" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8098989768441561509" xil_pn:start_ts="1455164056">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
   </transforms>
 

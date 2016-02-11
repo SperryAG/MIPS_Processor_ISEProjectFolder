@@ -1,71 +1,22 @@
-<<<<<<< HEAD
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_isim_beh.exe -prj C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_beh.prj work.PROCESSOR_32Bit_tb 
-=======
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_isim_beh.exe -prj C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_beh.prj work.PROCESSOR_32Bit_tb 
->>>>>>> origin/master
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONCATENATE_26to32Bit_TF_isim_beh.exe -prj C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONCATENATE_26to32Bit_TF_beh.prj work.CONCATENATE_26to32Bit_TF work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-<<<<<<< HEAD
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/SIGNEXTEND_16to32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/ROM_512x32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/REGFILE_32BitX5Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/RAM_512x32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROG_COUNTER_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROCESSOR_pkg.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/MUX_2to1_5Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/MUX_2to1_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/CONTROLLER_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/ADDER_32Bit_Unsigned.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb.vhd" into library work
-=======
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/SIGNEXTEND_16to32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ROM_512x32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/REGFILE_32BitX5Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/RAM_512x32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROG_COUNTER_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_pkg.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/MUX_2to1_5Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/MUX_2to1_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONTROLLER_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ADDER_32Bit_Unsigned.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit.vhd" into library work
-Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb.vhd" into library work
->>>>>>> origin/master
+Analyzing Verilog file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONCATENATE_26to32Bit_TF.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONCATENATE_26to32Bit.vhd" into library work
 Starting static elaboration
 Completed static elaboration
+Compiling module CONCATENATE_26to32Bit_TF
+Compiling module glbl
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package processor_pkg
-Compiling package std_logic_arith
-Compiling package std_logic_unsigned
-Compiling package textio
 Compiling package numeric_std
-Compiling architecture behavioral of entity PROG_COUNTER_32Bit [prog_counter_32bit_default]
-Compiling architecture behavioral of entity ADDER_32Bit_Unsigned [adder_32bit_unsigned_default]
-Compiling architecture behavioral of entity ROM_512x32Bit [rom_512x32bit_default]
-Compiling architecture behavioral of entity MUX_2to1_5Bit [mux_2to1_5bit_default]
-Compiling architecture behavioral of entity CONTROLLER_32Bit [controller_32bit_default]
-Compiling architecture behavioral of entity REGFILE_32BitX5Bit [regfile_32bitx5bit_default]
-Compiling architecture behavioral of entity SIGNEXTEND_16to32Bit [signextend_16to32bit_default]
-Compiling architecture behavioral of entity MUX_2to1_32Bit [mux_2to1_32bit_default]
-Compiling architecture behavioral of entity ALU_32BIT [alu_32bit_default]
-Compiling architecture behavioral of entity RAM_512x32Bit [ram_512x32bit_default]
-Compiling architecture behavioral of entity PROCESSOR_32Bit [processor_32bit_default]
-Compiling architecture behavior of entity processor_32bit_tb
+Compiling architecture behavioral of entity CONCATENATE_26to32Bit [concatenate_26to32bit_default]
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 30 VHDL Units
-<<<<<<< HEAD
-Built simulation executable C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_isim_beh.exe
-Fuse Memory Usage: 37480 KB
-Fuse CPU Usage: 546 ms
-=======
-Built simulation executable C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_isim_beh.exe
-Fuse Memory Usage: 36016 KB
-Fuse CPU Usage: 1843 ms
->>>>>>> origin/master
+Compiled 5 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/CONCATENATE_26to32Bit_TF_isim_beh.exe
+Fuse Memory Usage: 34920 KB
+Fuse CPU Usage: 1312 ms
