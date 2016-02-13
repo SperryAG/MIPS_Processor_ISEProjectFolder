@@ -26,7 +26,6 @@ ARCHITECTURE behavior OF PROCESSOR_32Bit_tb IS
 				out_pc                    : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ProgramCounter
 				out_adder_pc              : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Adder_PC
 				out_rom                   : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Rom
-				out_shiftleft             : OUT STD_LOGIC_VECTOR(25 DOWNTO 0); -- out_ShiftLeft
 				out_mux_jal               : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_JalControl
 				out_mux_regdst            : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_RegDst
 				out_mux_jaladdr           : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_JalAddrControl
@@ -37,7 +36,7 @@ ARCHITECTURE behavior OF PROCESSOR_32Bit_tb IS
 				out_controller_jaladdr    : OUT STD_LOGIC;                     -- out_Controller_JALAddrControl
 				out_controller_jaldata    : OUT STD_LOGIC;                     -- out_Controller_JALDataControl
 				out_controller_shiftvalue : OUT STD_LOGIC;                     -- out_Controller_ShiftValueControl
-				out_controller_load       : OUT STD_LOGIC_vector(1 DOWNTO 0);  -- out_Controller_LoadControl
+				out_controller_load       : OUT STD_LOGIC;                     -- out_Controller_LoadControl
 				out_controller_jr         : OUT STD_LOGIC;                     -- out_Controller_JRControl
 				out_controller_jumporjr   : OUT STD_LOGIC;                     -- out_Controller_JumpOrJRControl
 				out_controller_lui        : OUT STD_LOGIC;                     -- out_Controller_LUIControl
@@ -61,7 +60,6 @@ ARCHITECTURE behavior OF PROCESSOR_32Bit_tb IS
 				out_mux_jump              : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JumpControl
 				out_and                   : OUT STD_LOGIC;                     -- out_AND
 				out_shiftandextend        : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ShiftAndExtend
-				out_splitter              : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Splitter
 				out_mux_jumporjr          : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JumpORJRControl
 				out_mux_jr                : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JRControl
 				out_ram                   : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Ram
@@ -77,7 +75,6 @@ ARCHITECTURE behavior OF PROCESSOR_32Bit_tb IS
 	SIGNAL out_pc_tb                    : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ProgramCounter
 	SIGNAL out_adder_pc_tb              : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Adder_PC
 	SIGNAL out_rom_tb                   : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Rom
-	SIGNAL out_shiftleft_tb             : STD_LOGIC_VECTOR(25 DOWNTO 0); -- out_ShiftLeft
 	SIGNAL out_mux_jal_tb               : STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_JalControl
 	SIGNAL out_mux_regdst_tb            : STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_RegDst
 	SIGNAL out_mux_jaladdr_tb           : STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_JalAddrControl
@@ -88,7 +85,7 @@ ARCHITECTURE behavior OF PROCESSOR_32Bit_tb IS
 	SIGNAL out_controller_jaladdr_tb    : STD_LOGIC;                     -- out_Controller_JALAddrControl
 	SIGNAL out_controller_jaldata_tb    : STD_LOGIC;                     -- out_Controller_JALDataControl
 	SIGNAL out_controller_shiftvalue_tb : STD_LOGIC;                     -- out_Controller_ShiftValueControl
-	SIGNAL out_controller_load_tb       : STD_LOGIC_VECTOR(1 DOWNTO 0);  -- out_Controller_LoadControl
+	SIGNAL out_controller_load_tb       : STD_LOGIC;                     -- out_Controller_LoadControl
 	SIGNAL out_controller_jr_tb         : STD_LOGIC;                     -- out_Controller_JRControl
 	SIGNAL out_controller_jumporjr_tb   : STD_LOGIC;                     -- out_Controller_JumpOrJRControl
 	SIGNAL out_controller_lui_tb        : STD_LOGIC;                     -- out_Controller_LUIControl
@@ -112,7 +109,6 @@ ARCHITECTURE behavior OF PROCESSOR_32Bit_tb IS
 	SIGNAL out_mux_jump_tb              : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JumpControl
 	SIGNAL out_and_tb                   : STD_LOGIC;                     -- out_AND
 	SIGNAL out_shiftandextend_tb        : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ShiftAndExtend
-	SIGNAL out_splitter_tb              : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Splitter
 	SIGNAL out_mux_jumporjr_tb          : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JumpORJRControl
 	SIGNAL out_mux_jr_tb                : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JRControl
 	SIGNAL out_ram_tb                   : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Ram
@@ -133,7 +129,6 @@ BEGIN
 			out_pc => out_pc_tb,
 			out_adder_pc => out_adder_pc_tb,
 			out_rom => out_rom_tb,
-			out_shiftleft => out_shiftleft_tb,
 			out_mux_jal => out_mux_jal_tb,
 			out_mux_regdst => out_mux_regdst_tb,
 			out_mux_jaladdr => out_mux_jaladdr_tb,
@@ -168,7 +163,6 @@ BEGIN
 			out_mux_jump => out_mux_jump_tb,
 			out_and => out_and_tb,
 			out_shiftandextend => out_shiftandextend_tb,
-			out_splitter => out_splitter_tb,
 			out_mux_jumporjr => out_mux_jumporjr_tb,
 			out_mux_jr => out_mux_jr_tb,
 			out_ram => out_ram_tb,

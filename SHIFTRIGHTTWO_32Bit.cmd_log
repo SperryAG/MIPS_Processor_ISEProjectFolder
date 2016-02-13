@@ -1,1 +1,0 @@
-vhdtdtfi -prj testgate -o C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/SHIFTRIGHTTWO_32Bit.tfi -module SHIFTRIGHTTWO_32Bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work SHIFTRIGHTTWO_32Bit.vhd 

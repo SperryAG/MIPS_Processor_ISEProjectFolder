@@ -30,7 +30,7 @@ PACKAGE processor_pkg IS
             JALAddrControl    : OUT STD_LOGIC;
             JALDataControl    : OUT STD_LOGIC;
             ShiftValueControl : OUT STD_LOGIC;
-            LoadControl       : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+            LoadControl       : OUT STD_LOGIC;
             JRControl         : OUT STD_LOGIC;
             JumpOrJRControl   : OUT STD_LOGIC;
             LUIControl        : OUT STD_LOGIC;
@@ -74,7 +74,8 @@ PACKAGE processor_pkg IS
 		PORT(
 			clk   : IN  STD_LOGIC;
             dsize : IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
-			we    : IN  STD_LOGIC;
+			sign  : IN  STD_LOGIC;
+            we    : IN  STD_LOGIC;
 			addr  : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			dataI : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			dataO : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
@@ -116,22 +117,15 @@ PACKAGE processor_pkg IS
 		);
 	END COMPONENT;
     
-    COMPONENT SHIFTLEFT_26Bit
-		PORT( 
-			  i : IN  STD_LOGIC_VECTOR(25 DOWNTO 0);
-			  o : OUT STD_LOGIC_VECTOR(25 DOWNTO 0)
-		);
-	END COMPONENT;
-    
     COMPONENT CONCATENATE_26to32Bit
         PORT(
             in_main : IN  STD_LOGIC_VECTOR(25 DOWNTO 0);
-		    in_conc : IN  STD_LOGIC_VECTOR(5 DOWNTO 0);
+		    in_conc : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
             o       : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 	   );
     END COMPONENT;
     
-    COMPONENT SHIFTRIGHTTWO_32Bit
+    COMPONENT SHIFTLEFTTWO_32Bit
         PORT(
             i : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
             o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 

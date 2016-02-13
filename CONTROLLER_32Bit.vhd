@@ -19,7 +19,7 @@ ENTITY CONTROLLER_32Bit IS
 	   JALAddrControl    : OUT STD_LOGIC;
 		JALDataControl    : OUT STD_LOGIC;
 		ShiftValueControl : OUT STD_LOGIC;
-		LoadControl       : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+		LoadControl       : OUT STD_LOGIC;
 		JRControl         : OUT STD_LOGIC;
 		JumpOrJRControl   : OUT STD_LOGIC;
 		LUIControl        : OUT STD_LOGIC;
@@ -37,9 +37,9 @@ END CONTROLLER_32Bit;
 ----------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF CONTROLLER_32Bit IS
 SIGNAL t_JALControl, t_RegDst, t_JALAddrControl, t_JALDataControl, t_ShiftValueControl,
-		 t_JRControl, t_JumpOrJRControl, t_LUIControl, t_Branch, t_MemToReg, t_MemWrite,
+		 t_LoadControl, t_JRControl, t_JumpOrJRControl, t_LUIControl, t_Branch, t_MemToReg, t_MemWrite,
 		 t_ALUSrc, t_RegWrite : STD_LOGIC := '0';
-SIGNAL t_LoadControl, t_DSize : STD_LOGIC_VECTOR(1 DOWNTO 0) := (OTHERS => '0');
+SIGNAL t_DSize : STD_LOGIC_VECTOR(1 DOWNTO 0) := (OTHERS => '0');
 SIGNAL t_ALUControl : STD_LOGIC_VECTOR(5 DOWNTO 0) := (OTHERS => '0');
 BEGIN
     PROCESS (Func, Op)
@@ -52,7 +52,7 @@ BEGIN
 			t_JALAddrControl    <= '0';
 			t_JALDataControl    <= '1';
 			t_ShiftValueControl <= '0';
-			t_LoadControl       <= "00";
+			t_LoadControl       <= '0';
 			t_JRControl         <= '0';
 			t_JumpOrJRControl   <= '1';
 			t_LUIControl        <= '1';
@@ -73,7 +73,7 @@ BEGIN
 				t_JALAddrControl    <= '0';
 				t_JALDataControl    <= '1';
 				t_ShiftValueControl <= '0';
-				t_LoadControl       <= "00";
+				t_LoadControl       <= '0';
 				t_JRControl         <= '0';
 				t_JumpOrJRControl   <= '1';
 				t_LUIControl        <= '1';
@@ -90,7 +90,7 @@ BEGIN
 				t_JALAddrControl    <= '0';
 				t_JALDataControl    <= '1';
 				t_ShiftValueControl <= '0';
-				t_LoadControl       <= "00";
+				t_LoadControl       <= '0';
 				t_JRControl         <= '0';
 				t_JumpOrJRControl   <= '1';
 				t_LUIControl        <= '1';
@@ -111,7 +111,7 @@ BEGIN
 			t_JALAddrControl    <= '0';
 			t_JALDataControl    <= '1';
 			t_ShiftValueControl <= '0';
-			t_LoadControl       <= "00";
+			t_LoadControl       <= '0';
 			t_JRControl         <= '0';
 			t_JumpOrJRControl   <= '1';
 			t_LUIControl        <= '1';
@@ -132,7 +132,7 @@ BEGIN
 				t_JALAddrControl    <= '0';
 				t_JALDataControl    <= '1';
 				t_ShiftValueControl <= '0';
-				t_LoadControl       <= "00";
+				t_LoadControl       <= '0';
 				t_JRControl         <= '0';
 				t_JumpOrJRControl   <= '1';
 				t_LUIControl        <= '1';
@@ -149,7 +149,7 @@ BEGIN
 				t_JALAddrControl    <= '0';
 				t_JALDataControl    <= '1';
 				t_ShiftValueControl <= '0';
-				t_LoadControl       <= "00";
+				t_LoadControl       <= '0';
 				t_JRControl         <= '0';
 				t_JumpOrJRControl   <= '1';
 				t_LUIControl        <= '1';
@@ -166,7 +166,7 @@ BEGIN
 				t_JALAddrControl    <= '0';
 				t_JALDataControl    <= '1';
 				t_ShiftValueControl <= '0';
-				t_LoadControl       <= "00";
+				t_LoadControl       <= '0';
 				t_JRControl         <= '0';
 				t_JumpOrJRControl   <= '1';
 				t_LUIControl        <= '1';

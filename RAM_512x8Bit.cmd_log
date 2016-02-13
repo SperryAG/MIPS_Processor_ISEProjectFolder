@@ -1,0 +1,2 @@
+vhdtdtfi -lib work RAM_512x8Bit.vhd -prj testgate -o RAM_512x8Bit.spl -module RAM_512x8Bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a RAM_512x8Bit.spl C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/RAM_512x8Bit.sym 

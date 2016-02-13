@@ -21,8 +21,13 @@ END SHIFTANDEXTEND_32Bit;
 -- ARCHITECTURE
 ----------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF SHIFTANDEXTEND_32Bit IS
-
+SIGNAL temp : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 BEGIN
-	o <= i;
+	PROCESS(i)
+	BEGIN
+		temp(31 DOWNTO 16) <= i(15 DOWNTO 0);
+		temp(15 DOWNTO 0) <= (OTHERS => '0');
+	END PROCESS;
+	o <= temp;
 END Behavioral;
 

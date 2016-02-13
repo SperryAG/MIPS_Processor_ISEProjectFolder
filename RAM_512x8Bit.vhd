@@ -17,6 +17,7 @@ ENTITY RAM_512x8Bit IS
 	PORT(
 		clk   : IN  STD_LOGIC;
 		dsize : IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
+		sign  : IN  STD_LOGIC;
 		we    : IN  STD_LOGIC;
 		addr  : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 		dataI : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -35,40 +36,56 @@ BEGIN
 	BEGIN
 		IF (clk'EVENT AND clk='0') THEN
 			IF (we = '1') THEN
-				mem(CONV_INTEGER(addr(8 DOWNTO 0))) <= dataI(7 DOWNTO 0);
-				IF dsize = "01" THEN
-					mem(CONV_INTEGER(addr(8 DOWNTO 0))+1) <= dataI(15 DOWNTO 8);			
-				ELSIF dsize = "10" THEN
+				IF dsize = "00" THEN -- lower byte
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))) <= dataI(7 DOWNTO 0);
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))+1) <= (OTHERS => '0');
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))+2) <= (OTHERS => '0');
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))+3) <= (OTHERS => '0');
+				ELSIF dsize = "01" THEN -- lower half byte
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))) <= dataI(7 DOWNTO 0);
 					mem(CONV_INTEGER(addr(8 DOWNTO 0))+1) <= dataI(15 DOWNTO 8);
-				ELSIF dsize = "11" THEN
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))+2) <= (OTHERS => '0');
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))+3) <= (OTHERS => '0');
+				ELSIF dsize = "11" THEN -- word
+					mem(CONV_INTEGER(addr(8 DOWNTO 0))) <= dataI(7 DOWNTO 0);
 					mem(CONV_INTEGER(addr(8 DOWNTO 0))+1) <= dataI(15 DOWNTO 8);
-				END IF;
-				IF dsize = "10" THEN
 					mem(CONV_INTEGER(addr(8 DOWNTO 0))+2) <= dataI(23 DOWNTO 16);
-				ELSIF dsize = "11" THEN
-					mem(CONV_INTEGER(addr(8 DOWNTO 0))+2) <= dataI(23 DOWNTO 16);
-				END IF;
-				IF dsize = "11" THEN
 					mem(CONV_INTEGER(addr(8 DOWNTO 0))+3) <= dataI(31 DOWNTO 24);
 				END IF;
 			ELSE
-				temp <= (OTHERS => '0');
-				temp(7 DOWNTO 0) <= mem(CONV_INTEGER(addr(8 DOWNTO 0)));
-				IF dsize = "01" THEN
+				IF dsize = "00" THEN 
+					IF sign = '0' THEN -- signed byte
+						temp(7 DOWNTO 0) <= mem(CONV_INTEGER(addr(8 DOWNTO 0)));
+						IF temp(7) = '1' THEN
+							temp(31 DOWNTO 8) <= (OTHERS => '1');
+						ELSE
+							temp(31 DOWNTO 8) <= (OTHERS => '0');
+						END IF;
+					ELSE -- unsigned byte
+						temp(7 DOWNTO 0) <= mem(CONV_INTEGER(addr(8 DOWNTO 0)));
+						temp(31 DOWNTO 8) <= (OTHERS => '0');
+					END IF;
+				ELSIF dsize = "01" THEN
+					IF sign = '0' THEN -- signed half-word
+						temp(7 DOWNTO 0) <= mem(CONV_INTEGER(addr(8 DOWNTO 0)));
+						temp(15 DOWNTO 8) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+1);
+						IF temp(15) = '1' THEN
+							temp(31 DOWNTO 16) <= (OTHERS => '1');
+						else
+							temp(31 DOWNTO 16) <= (OTHERS => '0');
+						END IF;
+					ELSE -- unsigned half-word
+						temp(7 DOWNTO 0) <= mem(CONV_INTEGER(addr(8 DOWNTO 0)));
+						temp(15 DOWNTO 8) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+1);
+						temp(31 DOWNTO 16) <= (OTHERS => '0');
+					END IF;
+				ELSIF dsize = "11" THEN -- word
+					temp(7 DOWNTO 0) <= mem(CONV_INTEGER(addr(8 DOWNTO 0)));
 					temp(15 DOWNTO 8) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+1);
-				ELSIF dsize = "10" THEN
-					temp(15 DOWNTO 8) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+1);
-				ELSIF dsize = "11" THEN
-					temp(15 DOWNTO 8) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+1);
-				END IF;
-				IF dsize = "10" THEN
 					temp(23 DOWNTO 16) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+2);
-				ELSIF dsize = "11" THEN
-					temp(23 DOWNTO 16) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+2);
-				END IF;
-				IF dsize = "11" THEN
 					temp(31 DOWNTO 24) <= mem(CONV_INTEGER(addr(8 DOWNTO 0))+3);
 				END IF;
+				
 			END IF;
 		END IF;
 	END PROCESS;
