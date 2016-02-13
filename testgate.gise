@@ -23,21 +23,26 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU32_TF_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU32_TF_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ALU32_TF_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU32_TF_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_32BIT_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CONCATENATE_26to32Bit_TF_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="MUX_2to1_32Bit_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="PROCESSOR_32Bit.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="PROCESSOR_32Bit.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="PROCESSOR_32Bit.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PROCESSOR_32Bit.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PROCESSOR_32Bit.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="PROCESSOR_32Bit.tfi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PROCESSOR_32Bit.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROCESSOR_32Bit_envsettings.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PROCESSOR_32Bit_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROCESSOR_32Bit_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_tb_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PROCESSOR_32Bit_xst.xrpt"/>
@@ -54,6 +59,7 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
@@ -64,10 +70,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455335547" xil_pn:in_ck="-7264538846902175958" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1455335547">
+    <transform xil_pn:end_ts="1455340501" xil_pn:in_ck="-8890462577639867378" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1455340501">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ADDER_32Bit_Unsigned.vhd"/>
+      <outfile xil_pn:name="ALU32_TF.v"/>
       <outfile xil_pn:name="ALU_32Bit.vhd"/>
       <outfile xil_pn:name="AND_2to1_1Bit.vhd"/>
       <outfile xil_pn:name="CONCATENATE_26to32Bit.vhd"/>
@@ -94,11 +101,11 @@
       <outfile xil_pn:name="SPLITTER_32Bit.vhd"/>
       <outfile xil_pn:name="ShiftLeft_26Bit.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1455333371" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="648866251778359608" xil_pn:start_ts="1455333371">
+    <transform xil_pn:end_ts="1455340432" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5259006385188856087" xil_pn:start_ts="1455340432">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455333371" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3450490909046791616" xil_pn:start_ts="1455333371">
+    <transform xil_pn:end_ts="1455340432" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8013822919052724865" xil_pn:start_ts="1455340432">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -106,10 +113,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455335548" xil_pn:in_ck="-7264538846902175958" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1455335548">
+    <transform xil_pn:end_ts="1455340501" xil_pn:in_ck="-8890462577639867378" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1455340501">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ADDER_32Bit_Unsigned.vhd"/>
+      <outfile xil_pn:name="ALU32_TF.v"/>
       <outfile xil_pn:name="ALU_32Bit.vhd"/>
       <outfile xil_pn:name="AND_2to1_1Bit.vhd"/>
       <outfile xil_pn:name="CONCATENATE_26to32Bit.vhd"/>
@@ -136,20 +144,22 @@
       <outfile xil_pn:name="SPLITTER_32Bit.vhd"/>
       <outfile xil_pn:name="ShiftLeft_26Bit.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1455335552" xil_pn:in_ck="-7264538846902175958" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-420855118251302204" xil_pn:start_ts="1455335548">
+    <transform xil_pn:end_ts="1455340504" xil_pn:in_ck="-8890462577639867378" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4447784619139983861" xil_pn:start_ts="1455340501">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
-      <outfile xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="ALU32_TF_beh.prj"/>
+      <outfile xil_pn:name="ALU32_TF_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1455335552" xil_pn:in_ck="6682280295247987772" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7189468064970320249" xil_pn:start_ts="1455335552">
+    <transform xil_pn:end_ts="1455340505" xil_pn:in_ck="-2209689391004529525" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7418965983249771506" xil_pn:start_ts="1455340504">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="ALU32_TF_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1455164041" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1455164041">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -187,16 +197,15 @@
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="PROCESSOR_32Bit.lso"/>
       <outfile xil_pn:name="PROCESSOR_32Bit.prj"/>
       <outfile xil_pn:name="PROCESSOR_32Bit.syr"/>
       <outfile xil_pn:name="PROCESSOR_32Bit.xst"/>
       <outfile xil_pn:name="PROCESSOR_32Bit_stx_beh.prj"/>
-      <outfile xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
       <outfile xil_pn:name="PROCESSOR_32Bit_tb_stx_beh.prj"/>
       <outfile xil_pn:name="PROCESSOR_32Bit_vhdl.prj"/>
-      <outfile xil_pn:name="PROCESSOR_32Bit_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>

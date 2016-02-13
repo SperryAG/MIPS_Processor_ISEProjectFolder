@@ -1,4 +1,5 @@
 vhdl work "SPLITTER_32Bit.vhd"
+vhdl work "SIGNEXTEND_5to32Bit.vhd"
 vhdl work "SIGNEXTEND_16to32Bit.vhd"
 vhdl work "SHIFTRIGHTTWO_32Bit.vhd"
 vhdl work "ShiftLeft_26Bit.vhd"
