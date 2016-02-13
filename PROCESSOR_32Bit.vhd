@@ -16,50 +16,50 @@ ENTITY PROCESSOR_32Bit IS
 		ref_clk : IN std_logic;
 		reset   : IN std_logic;
 		-- Test Ports
-		out_pc                    : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ProgramCounter
-	   out_adder_pc              : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Adder_PC
-	   out_rom                   : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Rom
-		out_shiftleft             : STD_LOGIC_VECTOR(25 DOWNTO 0); -- out_ShiftLeft
-		out_mux_jal               : STD_LOGIC_VECTOR(5 DOWNTO 0);  -- out_Mux_JalControl
-		out_mux_regdst            : STD_LOGIC_VECTOR(5 DOWNTO 0);  -- out_Mux_RegDst
-		out_mux_jaladdr           : STD_LOGIC_VECTOR(5 DOWNTO 0);  -- out_Mux_JalAddrControl
-		out_mux_jaldata           : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JalDataControl
-		out_concatenate           : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Concatinate
-		out_controller_jal        : STD_LOGIC;                     -- out_Controller_JALControl
-		out_controller_regdst     : STD_LOGIC;                     -- out_Controller_RegDst
-		out_controller_jaladdr    : STD_LOGIC;                     -- out_Controller_JALAddrControl
-		out_controller_jaldata    : STD_LOGIC;                     -- out_Controller_JALDataControl
-		out_controller_shiftvalue : STD_LOGIC;                     -- out_Controller_ShiftValueControl
-		out_controller_load       : STD_LOGIC;                     -- out_Controller_LoadControl
-		out_controller_jr         : STD_LOGIC;                     -- out_Controller_JRControl
-		out_controller_jumporjr   : STD_LOGIC;                     -- out_Controller_JumpOrJRControl
-		out_controller_lui        : STD_LOGIC;                     -- out_Controller_LUIControl
-		out_controller_branch     : STD_LOGIC;                     -- out_Controller_Branch
-		out_controller_memtoreg   : STD_LOGIC;                     -- out_Controller_MemToReg
-		out_controller_memwrite   : STD_LOGIC;                     -- out_Controller_MemWrite
-		out_controller_dsize      : STD_LOGIC_VECTOR(1 DOWNTO 0);  -- out_Controller_DSize
-		out_controller_alu        : STD_LOGIC_VECTOR(5 DOWNTO 0);  -- out_Controller_ALUControl
-		out_controller_alusrc     : STD_LOGIC;                     -- out_Controller_ALUSource
-		out_controller_regwrite   : STD_LOGIC;                     -- out_Controller_RegWrite
-		out_regfile_rdata1        : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_RegisterFile_RData1
-		out_regfile_rdata2        : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_RegisterFile_RData2
-		out_signextend_a          : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_SignExtendA
-		out_signextend_b          : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_SignExtendB
-		out_mux_alusrc            : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_ALUSrc
-		out_mux_shiftvalue        : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_ShiftValueControl
-		out_shiftrighttwo         : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ShiftRightTwo
-		out_alu_branch            : STD_LOGIC;                     -- out_ALU_BranchOut
-		out_alu                   : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ALU
-		out_adder_jump            : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Adder_Jump
-		out_mux_jump              : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JumpControl
-		out_and                   : STD_LOGIC;                     -- out_AND
-		out_shiftandextend        : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ShiftAndExtend
-		out_splitter              : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Splitter
-		out_mux_jumporjr          : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JumpORJRControl
-		out_mux_jr                : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JRControl
-		out_ram                   : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Ram
-		out_mux_lui               : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_LUIControl
-		out_mux_wb                : STD_LOGIC_VECTOR(31 DOWNTO 0)  -- out_Mux_WBControl	
+		out_pc                    : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ProgramCounter
+	   out_adder_pc              : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Adder_PC
+	   out_rom                   : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Rom
+		out_shiftleft             : OUT STD_LOGIC_VECTOR(25 DOWNTO 0); -- out_ShiftLeft
+		out_mux_jal               : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_JalControl
+		out_mux_regdst            : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_RegDst
+		out_mux_jaladdr           : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_JalAddrControl
+		out_mux_jaldata           : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JalDataControl
+		out_concatenate           : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Concatinate
+		out_controller_jal        : OUT STD_LOGIC;                     -- out_Controller_JALControl
+		out_controller_regdst     : OUT STD_LOGIC;                     -- out_Controller_RegDst
+		out_controller_jaladdr    : OUT STD_LOGIC;                     -- out_Controller_JALAddrControl
+		out_controller_jaldata    : OUT STD_LOGIC;                     -- out_Controller_JALDataControl
+		out_controller_shiftvalue : OUT STD_LOGIC;                     -- out_Controller_ShiftValueControl
+		out_controller_load       : OUT STD_LOGIC;                     -- out_Controller_LoadControl
+		out_controller_jr         : OUT STD_LOGIC;                     -- out_Controller_JRControl
+		out_controller_jumporjr   : OUT STD_LOGIC;                     -- out_Controller_JumpOrJRControl
+		out_controller_lui        : OUT STD_LOGIC;                     -- out_Controller_LUIControl
+		out_controller_branch     : OUT STD_LOGIC;                     -- out_Controller_Branch
+		out_controller_memtoreg   : OUT STD_LOGIC;                     -- out_Controller_MemToReg
+		out_controller_memwrite   : OUT STD_LOGIC;                     -- out_Controller_MemWrite
+		out_controller_dsize      : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);  -- out_Controller_DSize
+		out_controller_alu        : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);  -- out_Controller_ALUControl
+		out_controller_alusrc     : OUT STD_LOGIC;                     -- out_Controller_ALUSource
+		out_controller_regwrite   : OUT STD_LOGIC;                     -- out_Controller_RegWrite
+		out_regfile_rdata1        : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_RegisterFile_RData1
+		out_regfile_rdata2        : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_RegisterFile_RData2
+		out_signextend_a          : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_SignExtendA
+		out_signextend_b          : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_SignExtendB
+		out_mux_alusrc            : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_ALUSrc
+		out_mux_shiftvalue        : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_ShiftValueControl
+		out_shiftrighttwo         : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ShiftRightTwo
+		out_alu_branch            : OUT STD_LOGIC;                     -- out_ALU_BranchOut
+		out_alu                   : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ALU
+		out_adder_jump            : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Adder_Jump
+		out_mux_jump              : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JumpControl
+		out_and                   : OUT STD_LOGIC;                     -- out_AND
+		out_shiftandextend        : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ShiftAndExtend
+		out_splitter              : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Splitter
+		out_mux_jumporjr          : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JumpORJRControl
+		out_mux_jr                : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JRControl
+		out_ram                   : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Ram
+		out_mux_lui               : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_LUIControl
+		out_mux_wb                : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)  -- out_Mux_WBControl	
 	);
 END PROCESSOR_32Bit;
 ----------------------------------------------------------------------------------
@@ -75,16 +75,16 @@ ARCHITECTURE Behavioral OF PROCESSOR_32Bit IS
 	 SIGNAL wLow       : STD_LOGIC_VECTOR(31 DOWNTO 0) := "00000000000000000000000000000000"; -- 0
 	 SIGNAL wHigh      : STD_LOGIC_VECTOR(31 DOWNTO 0) := "00000000000000000000000000000001"; -- 1
 	 SIGNAL wFour      : STD_LOGIC_VECTOR(31 DOWNTO 0) := "00000000000000000000000000000100"; -- 4
-	 SIGNAL wThirtyOne : STD_LOGIC_VECTOR(5 DOWNTO 0)  := "11111"; -- 31
+	 SIGNAL wThirtyOne : STD_LOGIC_VECTOR(4 DOWNTO 0) := "11111"; -- 31
 	 
 	 -- Common Signals
 	 SIGNAL w01 : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_ProgramCounter
 	 SIGNAL w02 : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Adder_PC
 	 SIGNAL w03 : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Rom
 	 SIGNAL w04 : STD_LOGIC_VECTOR(25 DOWNTO 0); -- out_ShiftLeft
-	 SIGNAL w05 : STD_LOGIC_VECTOR(5 DOWNTO 0);  -- out_Mux_JalControl
-	 SIGNAL w06 : STD_LOGIC_VECTOR(5 DOWNTO 0);  -- out_Mux_RegDst
-	 SIGNAL w07 : STD_LOGIC_VECTOR(5 DOWNTO 0);  -- out_Mux_JalAddrControl
+	 SIGNAL w05 : STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_JalControl
+	 SIGNAL w06 : STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_RegDst
+	 SIGNAL w07 : STD_LOGIC_VECTOR(4 DOWNTO 0);  -- out_Mux_JalAddrControl
 	 SIGNAL w08 : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Mux_JalDataControl
 	 SIGNAL w09 : STD_LOGIC_VECTOR(31 DOWNTO 0); -- out_Concatinate
 	 SIGNAL w10 : STD_LOGIC;                     -- out_Controller_JALControl
@@ -196,7 +196,7 @@ BEGIN
 	Inst_CONCATENATE_26to32Bit: CONCATENATE_26to32Bit 
 	PORT MAP(
 		in_main => w04,
-		in_conc => w02(X DOWNTO X),
+		in_conc => w02(5 DOWNTO 0),
 		o => w09
 	);
     
@@ -238,7 +238,7 @@ BEGIN
 	);
    
 	-- Instantiate SIGN EXTEND A 
-	Inst_SIGNEXTEND_16to32Bit_A: SIGNEXTEND_16to32Bit 
+	Inst_SIGNEXTEND_5to32Bit: SIGNEXTEND_5to32Bit 
 	PORT MAP(
 		i => w03(10 DOWNTO 6),
 		o => w28
