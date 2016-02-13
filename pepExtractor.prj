@@ -1,1 +1,2 @@
-work	"CONCATENATE_26to32Bit.vhd"
+work	"ALU_32Bit.vhd"
+work	"BOOL_TO_LOGIC.vhd"

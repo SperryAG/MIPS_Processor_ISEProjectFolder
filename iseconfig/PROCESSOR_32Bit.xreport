@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-02-10T20:12:10</DateModified>
+  <DateModified>2016-02-12T20:21:27</DateModified>
   <ModuleName>PROCESSOR_32Bit</ModuleName>
-  <SummaryTimeStamp>2016-01-24T16:21:23</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-02-12T19:08:48</SummaryTimeStamp>
   <SavedFilePath>C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/iseconfig/PROCESSOR_32Bit.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder\</ImplementationReportsDirectory>
   <DateInitialized>2016-01-18T13:50:18</DateInitialized>
