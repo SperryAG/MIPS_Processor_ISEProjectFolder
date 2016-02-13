@@ -30,7 +30,7 @@ PACKAGE processor_pkg IS
             JALAddrControl    : OUT STD_LOGIC;
             JALDataControl    : OUT STD_LOGIC;
             ShiftValueControl : OUT STD_LOGIC;
-            LoadControl       : OUT STD_LOGIC;
+            LoadControl       : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
             JRControl         : OUT STD_LOGIC;
             JumpOrJRControl   : OUT STD_LOGIC;
             LUIControl        : OUT STD_LOGIC;
@@ -155,8 +155,9 @@ PACKAGE processor_pkg IS
     
     COMPONENT SPLITTER_32Bit
         PORT(
-            i : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
-            o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 
+            i   : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+            sel : IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
+            o   : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 
         );
     END COMPONENT;
 

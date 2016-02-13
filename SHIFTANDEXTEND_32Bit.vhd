@@ -23,7 +23,6 @@ END SHIFTANDEXTEND_32Bit;
 ARCHITECTURE Behavioral OF SHIFTANDEXTEND_32Bit IS
 
 BEGIN
-
-
+	o <= i;
 END Behavioral;
 

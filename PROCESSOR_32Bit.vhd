@@ -30,7 +30,7 @@ ENTITY PROCESSOR_32Bit IS
 		out_controller_jaladdr    : OUT STD_LOGIC;                     -- out_Controller_JALAddrControl
 		out_controller_jaldata    : OUT STD_LOGIC;                     -- out_Controller_JALDataControl
 		out_controller_shiftvalue : OUT STD_LOGIC;                     -- out_Controller_ShiftValueControl
-		out_controller_load       : OUT STD_LOGIC;                     -- out_Controller_LoadControl
+		out_controller_load       : OUT STD_LOGIC_vector(1 DOWNTO 0);  -- out_Controller_LoadControl
 		out_controller_jr         : OUT STD_LOGIC;                     -- out_Controller_JRControl
 		out_controller_jumporjr   : OUT STD_LOGIC;                     -- out_Controller_JumpOrJRControl
 		out_controller_lui        : OUT STD_LOGIC;                     -- out_Controller_LUIControl
@@ -92,7 +92,7 @@ ARCHITECTURE Behavioral OF PROCESSOR_32Bit IS
 	 SIGNAL w12 : STD_LOGIC;                     -- out_Controller_JALAddrControl
 	 SIGNAL w13 : STD_LOGIC;                     -- out_Controller_JALDataControl
 	 SIGNAL w14 : STD_LOGIC;                     -- out_Controller_ShiftValueControl
-	 SIGNAL w15 : STD_LOGIC;                     -- out_Controller_LoadControl
+	 SIGNAL w15 : STD_LOGIC_vector(1 DOWNTO 0);  -- out_Controller_LoadControl
 	 SIGNAL w16 : STD_LOGIC;                     -- out_Controller_JRControl
 	 SIGNAL w17 : STD_LOGIC;                     -- out_Controller_JumpOrJRControl
 	 SIGNAL w18 : STD_LOGIC;                     -- out_Controller_LUIControl
@@ -322,6 +322,7 @@ BEGIN
 	Inst_SPLITTER_32Bit: SPLITTER_32Bit
 	PORT MAP(
 		i => w44,
+		sel => w15,
 		o => w39
 	);
 	

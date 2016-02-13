@@ -37,7 +37,7 @@ ARCHITECTURE behavior OF PROCESSOR_32Bit_tb IS
 				out_controller_jaladdr    : OUT STD_LOGIC;                     -- out_Controller_JALAddrControl
 				out_controller_jaldata    : OUT STD_LOGIC;                     -- out_Controller_JALDataControl
 				out_controller_shiftvalue : OUT STD_LOGIC;                     -- out_Controller_ShiftValueControl
-				out_controller_load       : OUT STD_LOGIC;                     -- out_Controller_LoadControl
+				out_controller_load       : OUT STD_LOGIC_vector(1 DOWNTO 0);  -- out_Controller_LoadControl
 				out_controller_jr         : OUT STD_LOGIC;                     -- out_Controller_JRControl
 				out_controller_jumporjr   : OUT STD_LOGIC;                     -- out_Controller_JumpOrJRControl
 				out_controller_lui        : OUT STD_LOGIC;                     -- out_Controller_LUIControl
@@ -88,7 +88,7 @@ ARCHITECTURE behavior OF PROCESSOR_32Bit_tb IS
 	SIGNAL out_controller_jaladdr_tb    : STD_LOGIC;                     -- out_Controller_JALAddrControl
 	SIGNAL out_controller_jaldata_tb    : STD_LOGIC;                     -- out_Controller_JALDataControl
 	SIGNAL out_controller_shiftvalue_tb : STD_LOGIC;                     -- out_Controller_ShiftValueControl
-	SIGNAL out_controller_load_tb       : STD_LOGIC;                     -- out_Controller_LoadControl
+	SIGNAL out_controller_load_tb       : STD_LOGIC_VECTOR(1 DOWNTO 0);  -- out_Controller_LoadControl
 	SIGNAL out_controller_jr_tb         : STD_LOGIC;                     -- out_Controller_JRControl
 	SIGNAL out_controller_jumporjr_tb   : STD_LOGIC;                     -- out_Controller_JumpOrJRControl
 	SIGNAL out_controller_lui_tb        : STD_LOGIC;                     -- out_Controller_LUIControl

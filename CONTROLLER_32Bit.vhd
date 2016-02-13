@@ -19,7 +19,7 @@ ENTITY CONTROLLER_32Bit IS
 	   JALAddrControl    : OUT STD_LOGIC;
 		JALDataControl    : OUT STD_LOGIC;
 		ShiftValueControl : OUT STD_LOGIC;
-		LoadControl       : OUT STD_LOGIC;
+		LoadControl       : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
 		JRControl         : OUT STD_LOGIC;
 		JumpOrJRControl   : OUT STD_LOGIC;
 		LUIControl        : OUT STD_LOGIC;
@@ -36,71 +36,165 @@ END CONTROLLER_32Bit;
 -- ARCHITECTURE
 ----------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF CONTROLLER_32Bit IS
-SIGNAL mtr, mw, b, as, rd, rw : STD_LOGIC := '0';
-SIGNAL ac : STD_LOGIC_VECTOR(5 DOWNTO 0) := (OTHERS => '0');
+SIGNAL t_JALControl, t_RegDst, t_JALAddrControl, t_JALDataControl, t_ShiftValueControl,
+		 t_JRControl, t_JumpOrJRControl, t_LUIControl, t_Branch, t_MemToReg, t_MemWrite,
+		 t_ALUSrc, t_RegWrite : STD_LOGIC := '0';
+SIGNAL t_LoadControl, t_DSize : STD_LOGIC_VECTOR(1 DOWNTO 0) := (OTHERS => '0');
+SIGNAL t_ALUControl : STD_LOGIC_VECTOR(5 DOWNTO 0) := (OTHERS => '0');
 BEGIN
     PROCESS (Func, Op)
 	BEGIN
         -- R-TYPE Instructions
         ----------------------------
 		IF (Op = "000000") THEN
-			mtr <= '1';
-         mw  <= '0';
-         b   <= '0';
-         ac  <= Func;
-         as  <= '0';
-         rd  <= '1';
-         rw  <= '1';
+			t_JALControl        <= '0';
+			t_RegDst            <= '1';
+			t_JALAddrControl    <= '0';
+			t_JALDataControl    <= '1';
+			t_ShiftValueControl <= '0';
+			t_LoadControl       <= "00";
+			t_JRControl         <= '0';
+			t_JumpOrJRControl   <= '1';
+			t_LUIControl        <= '1';
+			t_Branch            <= '0';
+			t_MemToReg          <= '1';
+			t_MemWrite          <= '0';
+			t_DSize             <= "11";
+			t_ALUControl        <= Func;
+			t_ALUSrc            <= '0';	
+			t_RegWrite          <= '1';
             
         -- J-TYPE Instructions
         ----------------------------
 		ELSIF (Op(5 DOWNTO 1) = "00001") THEN
 			IF (Op(0) = '0') THEN
-			
+				t_JALControl        <= '0';
+				t_RegDst            <= '1';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= "00";
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '0';
+				t_MemToReg          <= '1';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '0';	
+				t_RegWrite          <= '1';
 			ELSE
-			
+				t_JALControl        <= '0';
+				t_RegDst            <= '1';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= "00";
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '0';
+				t_MemToReg          <= '1';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '0';	
+				t_RegWrite          <= '1';
 			END IF;
             
         -- Coprocessor Instructions
         ----------------------------
 		ELSIF (Op(5 DOWNTO 2) = "0100") THEN
+			t_JALControl        <= '0';
+			t_RegDst            <= '1';
+			t_JALAddrControl    <= '0';
+			t_JALDataControl    <= '1';
+			t_ShiftValueControl <= '0';
+			t_LoadControl       <= "00";
+			t_JRControl         <= '0';
+			t_JumpOrJRControl   <= '1';
+			t_LUIControl        <= '1';
+			t_Branch            <= '0';
+			t_MemToReg          <= '1';
+			t_MemWrite          <= '0';
+			t_DSize             <= "11";
+			t_ALUControl        <= Func;
+			t_ALUSrc            <= '0';	
+			t_RegWrite          <= '1';
         
         -- I-Type Instructions
         ----------------------------
 		ELSE
 			IF (Op = "100011") THEN --lw
-				mtr <= '0';
-				mw  <= '0';
-				b   <= '0';
-				ac  <= "100000";
-				as  <= '1';
-				rd  <= '0';
-				rw  <= '1';
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= "00";
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '0';
+				t_MemToReg          <= '0';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '1';	
+				t_RegWrite          <= '1';
 			ELSIF (Op = "101011") THEN --sw
-				mtr <= '0'; -- dont care
-				mw  <= '1';
-				b   <= '0';
-				ac  <= "100000";
-				as  <= '1';
-				rd  <= '0'; -- dont care
-				rw  <= '0';
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= "00";
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '0';
+				t_MemToReg          <= '0';
+				t_MemWrite          <= '1';
+				t_DSize             <= "11";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '1';	
+				t_RegWrite          <= '0';
 			ELSIF (Op = "001000") THEN --addi
-				mtr <= '1';
-				mw  <= '0';
-				b   <= '0';
-				ac  <= "100000";
-				as  <= '1';
-				rd  <= '0';
-				rw  <= '1';		
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= "00";
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '0';
+				t_MemToReg          <= '1';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '1';	
+				t_RegWrite          <= '1';		
 			END IF;
        END IF;
 	END PROCESS;
-	MemToReg <= mtr;
-	MemWrite <= mw;
-	Branch <= b;
-	ALUControl <= ac;
-	ALUSrc <= as;
-	RegDst <= rd;
-	RegWrite <= rw;
+	JALControl        <= t_JALControl;
+	RegDst            <= t_RegDst;
+	JALAddrControl    <= t_JALAddrControl;
+	JALDataControl    <= t_JALDataControl;
+	ShiftValueControl <= t_ShiftValueControl;
+	LoadControl       <= t_LoadControl;
+	JRControl         <= t_JRControl;
+	JumpOrJRControl   <= t_JumpOrJRControl;
+	LUIControl        <= t_LUIControl;
+	Branch            <= t_Branch;
+	MemToReg          <= t_MemToReg;
+	MemWrite          <= t_MemWrite;
+	DSize             <= t_DSize;
+	ALUControl        <= t_ALUControl;
+	ALUSrc            <= t_ALUSrc;	
+	RegWrite          <= t_RegWrite;
 END Behavioral;
 

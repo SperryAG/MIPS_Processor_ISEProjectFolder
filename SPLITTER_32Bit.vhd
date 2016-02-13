@@ -12,17 +12,29 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ----------------------------------------------------------------------------------
 ENTITY SPLITTER_32Bit IS
 	PORT(
-		i : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
-		o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 
+		i   : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+		sel : IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
+		o   : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 
 	);
 END SPLITTER_32Bit;
 ----------------------------------------------------------------------------------
 -- ARCHITECTURE
 ----------------------------------------------------------------------------------
 ARCHITECTURE Behavioral OF SPLITTER_32Bit IS
-
+SIGNAL temp : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 BEGIN
-
-
+	PROCESS(i)
+	BEGIN
+		IF sel = "00" THEN
+			temp <= i;
+		ELSIF sel = "01" THEN
+			temp <= i;
+		ELSIF sel = "10" THEN
+			temp <= i;
+		ELSIF sel = "11" THEN
+			temp <= i;
+		END IF;
+	END PROCESS;
+	o <= temp;
 END Behavioral;
 
