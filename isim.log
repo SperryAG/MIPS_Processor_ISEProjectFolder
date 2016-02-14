@@ -395,438 +395,1650 @@ at 0 ps: Error: Textio read:: called on empty string or line
 at 0 ps: Error: Format error on line31
 at 0 ps: Error: Textio read:: called on empty string or line
 at 0 ps: Error: Format error on line31
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ROM_512x32Bit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ADDER_32Bit_Unsigned_PC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line33
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line33
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line33
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line33
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line33
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line33
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line33
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line33
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line34
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line34
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line34
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line34
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line34
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line34
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line34
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line34
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line35
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line35
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line35
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line35
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line35
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line35
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line35
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line35
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line37
+at 0 ps: Error: Format error on line5
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line37
+at 0 ps: Error: Format error on line5
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line37
+at 0 ps: Error: Format error on line5
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line37
+at 0 ps: Error: Format error on line5
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line37
+at 0 ps: Error: Format error on line5
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line37
+at 0 ps: Error: Format error on line5
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line37
+at 0 ps: Error: Format error on line5
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line37
+at 0 ps: Error: Format error on line5
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line38
+at 0 ps: Error: Format error on line6
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line38
+at 0 ps: Error: Format error on line6
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line38
+at 0 ps: Error: Format error on line6
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line38
+at 0 ps: Error: Format error on line6
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line38
+at 0 ps: Error: Format error on line6
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line38
+at 0 ps: Error: Format error on line6
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line38
+at 0 ps: Error: Format error on line6
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line38
+at 0 ps: Error: Format error on line6
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line39
+at 0 ps: Error: Format error on line7
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line39
+at 0 ps: Error: Format error on line7
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line39
+at 0 ps: Error: Format error on line7
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line39
+at 0 ps: Error: Format error on line7
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line39
+at 0 ps: Error: Format error on line7
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line39
+at 0 ps: Error: Format error on line7
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line39
+at 0 ps: Error: Format error on line7
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line39
+at 0 ps: Error: Format error on line7
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line41
+at 0 ps: Error: Format error on line9
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line41
+at 0 ps: Error: Format error on line9
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line41
+at 0 ps: Error: Format error on line9
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line41
+at 0 ps: Error: Format error on line9
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line41
+at 0 ps: Error: Format error on line9
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line41
+at 0 ps: Error: Format error on line9
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line41
+at 0 ps: Error: Format error on line9
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line41
+at 0 ps: Error: Format error on line9
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line42
+at 0 ps: Error: Format error on line10
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line42
+at 0 ps: Error: Format error on line10
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line42
+at 0 ps: Error: Format error on line10
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line42
+at 0 ps: Error: Format error on line10
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line42
+at 0 ps: Error: Format error on line10
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line42
+at 0 ps: Error: Format error on line10
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line42
+at 0 ps: Error: Format error on line10
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line42
+at 0 ps: Error: Format error on line10
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line43
+at 0 ps: Error: Format error on line11
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line43
+at 0 ps: Error: Format error on line11
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line43
+at 0 ps: Error: Format error on line11
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line43
+at 0 ps: Error: Format error on line11
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line43
+at 0 ps: Error: Format error on line11
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line43
+at 0 ps: Error: Format error on line11
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line43
+at 0 ps: Error: Format error on line11
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line43
+at 0 ps: Error: Format error on line11
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line45
+at 0 ps: Error: Format error on line13
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line45
+at 0 ps: Error: Format error on line13
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line45
+at 0 ps: Error: Format error on line13
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line45
+at 0 ps: Error: Format error on line13
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line45
+at 0 ps: Error: Format error on line13
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line45
+at 0 ps: Error: Format error on line13
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line45
+at 0 ps: Error: Format error on line13
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line45
+at 0 ps: Error: Format error on line13
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line46
+at 0 ps: Error: Format error on line14
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line46
+at 0 ps: Error: Format error on line14
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line46
+at 0 ps: Error: Format error on line14
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line46
+at 0 ps: Error: Format error on line14
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line46
+at 0 ps: Error: Format error on line14
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line46
+at 0 ps: Error: Format error on line14
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line46
+at 0 ps: Error: Format error on line14
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line46
+at 0 ps: Error: Format error on line14
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line47
+at 0 ps: Error: Format error on line15
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line47
+at 0 ps: Error: Format error on line15
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line47
+at 0 ps: Error: Format error on line15
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line47
+at 0 ps: Error: Format error on line15
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line47
+at 0 ps: Error: Format error on line15
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line47
+at 0 ps: Error: Format error on line15
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line47
+at 0 ps: Error: Format error on line15
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line47
+at 0 ps: Error: Format error on line15
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line49
+at 0 ps: Error: Format error on line17
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line49
+at 0 ps: Error: Format error on line17
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line49
+at 0 ps: Error: Format error on line17
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line49
+at 0 ps: Error: Format error on line17
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line49
+at 0 ps: Error: Format error on line17
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line49
+at 0 ps: Error: Format error on line17
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line49
+at 0 ps: Error: Format error on line17
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line49
+at 0 ps: Error: Format error on line17
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line50
+at 0 ps: Error: Format error on line18
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line50
+at 0 ps: Error: Format error on line18
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line50
+at 0 ps: Error: Format error on line18
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line50
+at 0 ps: Error: Format error on line18
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line50
+at 0 ps: Error: Format error on line18
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line50
+at 0 ps: Error: Format error on line18
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line50
+at 0 ps: Error: Format error on line18
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line50
+at 0 ps: Error: Format error on line18
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line51
+at 0 ps: Error: Format error on line19
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line51
+at 0 ps: Error: Format error on line19
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line51
+at 0 ps: Error: Format error on line19
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line51
+at 0 ps: Error: Format error on line19
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line51
+at 0 ps: Error: Format error on line19
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line51
+at 0 ps: Error: Format error on line19
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line51
+at 0 ps: Error: Format error on line19
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line51
+at 0 ps: Error: Format error on line19
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line53
+at 0 ps: Error: Format error on line21
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line53
+at 0 ps: Error: Format error on line21
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line53
+at 0 ps: Error: Format error on line21
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line53
+at 0 ps: Error: Format error on line21
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line53
+at 0 ps: Error: Format error on line21
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line53
+at 0 ps: Error: Format error on line21
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line53
+at 0 ps: Error: Format error on line21
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line53
+at 0 ps: Error: Format error on line21
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line54
+at 0 ps: Error: Format error on line22
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line54
+at 0 ps: Error: Format error on line22
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line54
+at 0 ps: Error: Format error on line22
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line54
+at 0 ps: Error: Format error on line22
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line54
+at 0 ps: Error: Format error on line22
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line54
+at 0 ps: Error: Format error on line22
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line54
+at 0 ps: Error: Format error on line22
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line54
+at 0 ps: Error: Format error on line22
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line55
+at 0 ps: Error: Format error on line23
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line55
+at 0 ps: Error: Format error on line23
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line55
+at 0 ps: Error: Format error on line23
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line55
+at 0 ps: Error: Format error on line23
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line55
+at 0 ps: Error: Format error on line23
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line55
+at 0 ps: Error: Format error on line23
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line55
+at 0 ps: Error: Format error on line23
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line55
+at 0 ps: Error: Format error on line23
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line57
+at 0 ps: Error: Format error on line25
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line57
+at 0 ps: Error: Format error on line25
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line57
+at 0 ps: Error: Format error on line25
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line57
+at 0 ps: Error: Format error on line25
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line57
+at 0 ps: Error: Format error on line25
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line57
+at 0 ps: Error: Format error on line25
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line57
+at 0 ps: Error: Format error on line25
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line57
+at 0 ps: Error: Format error on line25
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line58
+at 0 ps: Error: Format error on line26
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line58
+at 0 ps: Error: Format error on line26
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line58
+at 0 ps: Error: Format error on line26
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line58
+at 0 ps: Error: Format error on line26
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line58
+at 0 ps: Error: Format error on line26
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line58
+at 0 ps: Error: Format error on line26
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line58
+at 0 ps: Error: Format error on line26
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line58
+at 0 ps: Error: Format error on line26
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line59
+at 0 ps: Error: Format error on line27
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line59
+at 0 ps: Error: Format error on line27
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line59
+at 0 ps: Error: Format error on line27
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line59
+at 0 ps: Error: Format error on line27
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line59
+at 0 ps: Error: Format error on line27
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line59
+at 0 ps: Error: Format error on line27
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line59
+at 0 ps: Error: Format error on line27
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line59
+at 0 ps: Error: Format error on line27
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line61
+at 0 ps: Error: Format error on line29
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line61
+at 0 ps: Error: Format error on line29
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line61
+at 0 ps: Error: Format error on line29
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line61
+at 0 ps: Error: Format error on line29
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line61
+at 0 ps: Error: Format error on line29
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line61
+at 0 ps: Error: Format error on line29
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line61
+at 0 ps: Error: Format error on line29
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line61
+at 0 ps: Error: Format error on line29
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line62
+at 0 ps: Error: Format error on line30
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line62
+at 0 ps: Error: Format error on line30
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line62
+at 0 ps: Error: Format error on line30
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line62
+at 0 ps: Error: Format error on line30
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line62
+at 0 ps: Error: Format error on line30
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line62
+at 0 ps: Error: Format error on line30
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line62
+at 0 ps: Error: Format error on line30
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line62
+at 0 ps: Error: Format error on line30
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line63
+at 0 ps: Error: Format error on line31
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line63
+at 0 ps: Error: Format error on line31
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line63
+at 0 ps: Error: Format error on line31
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line63
+at 0 ps: Error: Format error on line31
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line63
+at 0 ps: Error: Format error on line31
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line63
+at 0 ps: Error: Format error on line31
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line63
+at 0 ps: Error: Format error on line31
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line63
+at 0 ps: Error: Format error on line31
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ROM_512x32Bit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ADDER_32Bit_Unsigned_PC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line65
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line65
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line65
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line65
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line65
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line65
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line65
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line65
+at 0 ps: Error: Format error on line1
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line66
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line66
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line66
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line66
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line66
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line66
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line66
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line66
+at 0 ps: Error: Format error on line2
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line67
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line67
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line67
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line67
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line67
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line67
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line67
+at 0 ps: Error: Format error on line3
 at 0 ps: Error: Textio read:: called on empty string or line
-at 0 ps: Error: Format error on line67
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ROM_512x32Bit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ADDER_32Bit_Unsigned_PC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ROM_512x32Bit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ADDER_32Bit_Unsigned_PC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line5
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line6
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line7
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line9
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line10
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line11
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line13
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line14
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line15
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line17
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line18
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line19
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line21
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line22
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line23
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line25
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line26
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line27
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line29
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line30
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line31
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ROM_512x32Bit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /processor_32bit_tb/uut/Inst_ADDER_32Bit_Unsigned_PC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line1
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line2
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
+at 0 ps: Error: Textio read:: called on empty string or line
+at 0 ps: Error: Format error on line3
 at 0 ps, Instance /processor_32bit_tb/uut/Inst_ROM_512x32Bit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.

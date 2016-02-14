@@ -136,6 +136,8 @@
     <transform xil_pn:end_ts="1455424883" xil_pn:in_ck="-6778963136840383952" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-420855118251302204" xil_pn:start_ts="1455424872">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
       <outfile xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -143,7 +145,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1455424884" xil_pn:in_ck="-7792553900409111926" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7189468064970320249" xil_pn:start_ts="1455424883">
+    <transform xil_pn:end_ts="1455460762" xil_pn:in_ck="-7792553900409111926" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7189468064970320249" xil_pn:start_ts="1455460762">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.wdb"/>

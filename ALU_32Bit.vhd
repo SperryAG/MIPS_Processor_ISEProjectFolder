@@ -53,6 +53,7 @@ BEGIN
 			ELSIF Func_in(2 DOWNTO 0) = "111" THEN
 				wire <=  A_in NOR B_in;
 			END IF;
+			
 		ELSIF Func_in(5 DOWNTO 3) = "101" THEN
 			bo <= '0';
 			IF Func_in(2 DOWNTO 0) = "000" THEN

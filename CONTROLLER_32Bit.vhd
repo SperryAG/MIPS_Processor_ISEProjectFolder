@@ -67,15 +67,15 @@ BEGIN
         -- J-TYPE Instructions
         ----------------------------
 		ELSIF (Op(5 DOWNTO 1) = "00001") THEN
-			IF (Op(0) = '0') THEN
+			IF (Op(0) = '0') THEN -- PC <= 26-bit-address
 				t_JALControl        <= '0';
 				t_RegDst            <= '1';
 				t_JALAddrControl    <= '0';
-				t_JALDataControl    <= '1';
+				t_JALDataControl    <= '0';
 				t_ShiftValueControl <= '0';
 				t_LoadControl       <= '0';
 				t_JRControl         <= '0';
-				t_JumpOrJRControl   <= '1';
+				t_JumpOrJRControl   <= '0';
 				t_LUIControl        <= '1';
 				t_Branch            <= '0';
 				t_MemToReg          <= '1';
@@ -143,6 +143,7 @@ BEGIN
 				t_ALUControl        <= Func;
 				t_ALUSrc            <= '1';	
 				t_RegWrite          <= '1';
+				
 			ELSIF (Op = "101011") THEN --sw
 				t_JALControl        <= '0';
 				t_RegDst            <= '0';
@@ -160,6 +161,7 @@ BEGIN
 				t_ALUControl        <= Func;
 				t_ALUSrc            <= '1';	
 				t_RegWrite          <= '0';
+				
 			ELSIF (Op = "001000") THEN --addi
 				t_JALControl        <= '0';
 				t_RegDst            <= '0';
