@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU32_TF_isim_beh.exe" -prj "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/ALU32_TF_beh.prj" "work.ALU32_TF" "work.glbl" 
+-intstyle "ise" -incremental -o "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_isim_beh.exe" -prj "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/PROCESSOR_32Bit_tb_beh.prj" "work.PROCESSOR_32Bit_tb" 
