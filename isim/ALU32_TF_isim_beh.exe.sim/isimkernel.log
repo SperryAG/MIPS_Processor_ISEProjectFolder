@@ -2,14 +2,14 @@ Command line:
    ALU32_TF_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  55513
+     -socket  59148
 
-Sat Feb 13 18:20:17 2016
+Sun Feb 14 13:59:07 2016
 
 
- Elaboration Time: 0.265625 sec
+ Elaboration Time: 0.25 sec
 
- Current Memory Usage: 1010.29 Meg
+ Current Memory Usage: 1014.32 Meg
 
  Total Signals          : 22
  Total Nets             : 182
@@ -19,11 +19,11 @@ Sat Feb 13 18:20:17 2016
  Total Processes        : 15
  Total Traceable Variables  : 36
  Total Scalar Nets and Variables : 833
-Total Line Count : 135
+Total Line Count : 121
 
- Total Simulation Time: 0.3125 sec
+ Total Simulation Time: 0.265625 sec
 
- Current Memory Usage: 695.669 Meg
+ Current Memory Usage: 385.106 Meg
 
-Sat Feb 13 18:22:02 2016
+Sun Feb 14 14:06:18 2016
 

@@ -23,7 +23,9 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU32_TF_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU32_TF_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ALU32_TF_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_32BIT.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU_32BIT.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU_32BIT.xst"/>
@@ -44,9 +46,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PROCESSOR_32Bit.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROCESSOR_32Bit_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROCESSOR_32Bit_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_tb_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROCESSOR_32Bit_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PROCESSOR_32Bit_xst.xrpt"/>
@@ -67,9 +67,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455424866" xil_pn:in_ck="-6778963136840383952" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1455424866">
+    <transform xil_pn:end_ts="1455487072" xil_pn:in_ck="-6778963136840383952" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1455487072">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADDER_32Bit_Unsigned.vhd"/>
       <outfile xil_pn:name="ALU32_TF.v"/>
       <outfile xil_pn:name="ALU_32Bit.vhd"/>
@@ -94,11 +98,11 @@
       <outfile xil_pn:name="SIGNEXTEND_16to32Bit_tb.vhd"/>
       <outfile xil_pn:name="SIGNEXTEND_5to32Bit.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1455417893" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="648866251778359608" xil_pn:start_ts="1455417893">
+    <transform xil_pn:end_ts="1455486601" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5259006385188856087" xil_pn:start_ts="1455486601">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455417893" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3450490909046791616" xil_pn:start_ts="1455417893">
+    <transform xil_pn:end_ts="1455486601" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8013822919052724865" xil_pn:start_ts="1455486601">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -106,9 +110,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455424872" xil_pn:in_ck="-6778963136840383952" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1455424872">
+    <transform xil_pn:end_ts="1455487073" xil_pn:in_ck="-6778963136840383952" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1455487072">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADDER_32Bit_Unsigned.vhd"/>
       <outfile xil_pn:name="ALU32_TF.v"/>
       <outfile xil_pn:name="ALU_32Bit.vhd"/>
@@ -133,22 +142,24 @@
       <outfile xil_pn:name="SIGNEXTEND_16to32Bit_tb.vhd"/>
       <outfile xil_pn:name="SIGNEXTEND_5to32Bit.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1455424883" xil_pn:in_ck="-6778963136840383952" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-420855118251302204" xil_pn:start_ts="1455424872">
+    <transform xil_pn:end_ts="1455487081" xil_pn:in_ck="-6778963136840383952" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4447784619139983861" xil_pn:start_ts="1455487073">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
-      <outfile xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.exe"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="ALU32_TF_beh.prj"/>
+      <outfile xil_pn:name="ALU32_TF_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1455460762" xil_pn:in_ck="-7792553900409111926" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7189468064970320249" xil_pn:start_ts="1455460762">
+    <transform xil_pn:end_ts="1455487081" xil_pn:in_ck="-7792553900409111926" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7418965983249771506" xil_pn:start_ts="1455487081">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PROCESSOR_32Bit_tb_isim_beh.wdb"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="ALU32_TF_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -184,8 +195,11 @@
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="PROCESSOR_32Bit.lso"/>
       <outfile xil_pn:name="PROCESSOR_32Bit.ngc"/>
@@ -193,7 +207,6 @@
       <outfile xil_pn:name="PROCESSOR_32Bit.prj"/>
       <outfile xil_pn:name="PROCESSOR_32Bit.syr"/>
       <outfile xil_pn:name="PROCESSOR_32Bit.xst"/>
-      <outfile xil_pn:name="PROCESSOR_32Bit_tb_beh.prj"/>
       <outfile xil_pn:name="PROCESSOR_32Bit_tb_stx_beh.prj"/>
       <outfile xil_pn:name="PROCESSOR_32Bit_vhdl.prj"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>

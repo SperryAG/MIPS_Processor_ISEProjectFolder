@@ -67,7 +67,7 @@ BEGIN
         -- J-TYPE Instructions
         ----------------------------
 		ELSIF (Op(5 DOWNTO 1) = "00001") THEN
-			IF (Op(0) = '0') THEN -- PC <= 26-bit-address
+			IF (Op(0) = '0') THEN -- PC <= JUMP 
 				t_JALControl        <= '0';
 				t_RegDst            <= '1';
 				t_JALAddrControl    <= '0';
@@ -85,7 +85,7 @@ BEGIN
 				t_ALUSrc            <= '0';	
 				t_RegWrite          <= '1';
 			ELSE
-				t_JALControl        <= '0';
+				t_JALControl        <= '0'; --JUMPLINK
 				t_RegDst            <= '1';
 				t_JALAddrControl    <= '0';
 				t_JALDataControl    <= '1';
@@ -102,7 +102,46 @@ BEGIN
 				t_ALUSrc            <= '0';	
 				t_RegWrite          <= '1';
 			END IF;
-            
+			
+			-- -- -- -- -- -- -- -- -- -- -- --
+				ELSIF (Op(5 DOWNTO 1) = "00100") THEN --TODO
+			IF (Op(0) = '0') THEN -- PC <= JUMPREGISTER
+				t_JALControl        <= '0';
+				t_RegDst            <= '1';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '0';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '0';
+				t_LUIControl        <= '1';
+				t_Branch            <= '0';
+				t_MemToReg          <= '1';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '0';	
+				t_RegWrite          <= '1';
+			ELSE
+				t_JALControl        <= '0'; --JUMPLINK REGISTER
+				t_RegDst            <= '1';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '0';
+				t_MemToReg          <= '1';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '0';	
+				t_RegWrite          <= '1';
+			END IF;
+	-- -- -- -- -- -- -- -- -- -- -- --- -
+		      
         -- Coprocessor Instructions
         ----------------------------
 		ELSIF (Op(5 DOWNTO 2) = "0100") THEN
@@ -137,12 +176,90 @@ BEGIN
 				t_JumpOrJRControl   <= '1';
 				t_LUIControl        <= '1';
 				t_Branch            <= '0';
-				t_MemToReg          <= '0';
+				t_MemToReg          <= '1';
 				t_MemWrite          <= '0';
 				t_DSize             <= "11";
 				t_ALUControl        <= Func;
 				t_ALUSrc            <= '1';	
 				t_RegWrite          <= '1';
+				
+			-- -- -- -- -- -- -- -- -- -- -- -- 
+			ELSIF (Op = "100001") THEN --lw (half)
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '0';
+				t_MemToReg          <= '1';
+				t_MemWrite          <= '0';
+				t_DSize             <= "10";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '1';	
+				t_RegWrite          <= '1';	
+
+			ELSIF (Op = "101001") THEN --sw (half)
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '0';
+				t_MemToReg          <= '1'; --dont care
+				t_MemWrite          <= '1';
+				t_DSize             <= "10";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '1';	
+				t_RegWrite          <= '0';
+				
+			ELSIF (Op = "100100") THEN --lw (unsigned)
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '0';
+				t_Branch            <= '0';
+				t_MemToReg          <= '1';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '1';	
+				t_RegWrite          <= '1';
+
+			ELSIF (Op = "100101") THEN --lw (unsigned)(half)
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '0';
+				t_Branch            <= '0';
+				t_MemToReg          <= '1';
+				t_MemWrite          <= '0';
+				t_DSize             <= "10";
+				t_ALUControl        <= Func;
+				t_ALUSrc            <= '1';	
+				t_RegWrite          <= '1';				
+
+				
+				
+		-- -- -- -- -- -- -- -- -- --- -- -- -- -- 		
+				
 				
 			ELSIF (Op = "101011") THEN --sw
 				t_JALControl        <= '0';
@@ -155,7 +272,7 @@ BEGIN
 				t_JumpOrJRControl   <= '1';
 				t_LUIControl        <= '1';
 				t_Branch            <= '0';
-				t_MemToReg          <= '0';
+				t_MemToReg          <= '1'; --dont care
 				t_MemWrite          <= '1';
 				t_DSize             <= "11";
 				t_ALUControl        <= Func;
@@ -196,7 +313,82 @@ BEGIN
 				t_DSize             <= "11";
 				t_ALUControl        <= "111100";
 				t_ALUSrc            <= '0';	
+				t_RegWrite          <= '0';
+				
+		--		--		--		--		--		--		--
+			ELSIF (Op = "000101") THEN --BRANCH NOT EQUAL-- IS ITYPE 
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '1';
+				t_MemToReg          <= '0';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= "111101";
+				t_ALUSrc            <= '0';	
 				t_RegWrite          <= '0';	
+				
+			ELSIF (Op = "000001") THEN --BRANCH GREATER OR EQUAL TO ZERO-- IS ITYPE 
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '1';
+				t_MemToReg          <= '0';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= "111001";
+				t_ALUSrc            <= '0';	
+				t_RegWrite          <= '0';
+
+			ELSIF (Op = "000110") THEN --BRANCH LESS THAN OR EQUAL TO ZERO-- IS ITYPE 
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '1';
+				t_MemToReg          <= '0';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= "111110";
+				t_ALUSrc            <= '0';	
+				t_RegWrite          <= '0';
+				
+			ELSIF (Op = "000111") THEN --BRANCH GREATER THAN ZERO-- IS ITYPE 
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '1';
+				t_MemToReg          <= '0';
+				t_MemWrite          <= '0';
+				t_DSize             <= "11";
+				t_ALUControl        <= "111111";
+				t_ALUSrc            <= '0';	
+				t_RegWrite          <= '0';				
+		--		--		--		--		--		--		--
+								
 			
 				
 			END IF;
