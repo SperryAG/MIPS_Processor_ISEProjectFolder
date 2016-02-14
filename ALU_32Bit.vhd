@@ -33,14 +33,17 @@ SIGNAL bo   : STD_LOGIC := '0';
 
 BEGIN
     PROCESS(Func_in, A_in, B_in) 
-        BEGIN --TODO: branch_out, Jump_out
+        BEGIN
 		IF Func_in(5 DOWNTO 3) = "100" THEN
 			bo <= '0';
-			--jo <= '0';
-			IF Func_in(2 DOWNTO 0) = "000" OR Func_in(2 DOWNTO 0) = "001" THEN 
+			IF Func_in(2 DOWNTO 0) = "000" THEN 
 				wire <= STD_LOGIC_VECTOR(signed(A_in) + signed(B_in));
-			ELSIF Func_in(2 DOWNTO 0) = "010" OR Func_in(2 DOWNTO 0) = "010" THEN
+			ELSIF Func_in(2 DOWNTO 0) = "001" THEN
+				wire <= STD_LOGIC_VECTOR(unsigned(A_in) + unsigned(B_in));
+			ELSIF Func_in(2 DOWNTO 0) = "010" THEN 
 				wire <= STD_LOGIC_VECTOR(signed(A_in) - signed(B_in));
+			ELSIF Func_in(2 DOWNTO 0) = "011" THEN
+				wire <= STD_LOGIC_VECTOR(unsigned(A_in) - unsigned(B_in));
 			ELSIF Func_in(2 DOWNTO 0) = "100" THEN
 				wire <=  A_in AND B_in;
 			ELSIF Func_in(2 DOWNTO 0) = "101" THEN
@@ -52,8 +55,13 @@ BEGIN
 			END IF;
 		ELSIF Func_in(5 DOWNTO 3) = "101" THEN
 			bo <= '0';
-			--jo <= '0';
 			IF Func_in(2 DOWNTO 0) = "000" THEN
+				IF signed(A_in) < signed(B_in) THEN
+					wire <= "00000000000000000000000000000001";
+				ELSE
+					wire <= (OTHERS => '0');
+				END IF;
+			ELSIF Func_in(2 DOWNTO 0) = "010" THEN
 				IF signed(A_in) < signed(B_in) THEN
 					wire <= "00000000000000000000000000000001";
 				ELSE
@@ -66,78 +74,7 @@ BEGIN
 					wire <= (OTHERS => '0');
 				END IF;
 			END IF;
-		ELSIF Func_in(5 DOWNTO 3) = "111" THEN
-			wire <= A_in;
-			IF Func_in(2 DOWNTO 0) = "010" OR Func_in(2 DOWNTO 0) = "011" THEN
-				--jo <= '1';
-			ELSE
-				--jo <= '0';
-			END IF;
-			IF Func_in(2 DOWNTO 0) = "000" THEN 
-				IF signed(A_in) < 0 THEN
-					bo <= '1';
-				ELSE
-					bo <= '0';
-				END IF;
-			ELSIF Func_in(2 DOWNTO 0) = "001" THEN
-				IF signed(A_in) >= 0 THEN
-					bo <= '1';
-				ELSE
-					bo <= '0';
-				END IF;
-			ELSIF Func_in(2 DOWNTO 0) = "010" OR Func_in(2 DOWNTO 0) = "011" THEN
-				bo <= '0';
-			ELSIF Func_in(2 DOWNTO 0) = "100" THEN
-				IF signed(A_in) = signed(B_in) THEN
-					bo <= '1';
-				ELSE
-					bo <= '0';
-				END IF;
-			ELSIF Func_in(2 DOWNTO 0) = "101" THEN
-				IF signed(A_in) = signed(B_in) THEN
-					bo <= '0';
-				ELSE
-					bo <= '1';
-				END IF;
-			ELSIF Func_in(2 DOWNTO 0) = "110" THEN
-				IF signed(A_in) <= 0 THEN
-					bo <= '1';
-				ELSE
-					bo <= '0';
-				END IF;
-			ELSIF Func_in(2 DOWNTO 0) = "111" THEN
-				IF signed(A_in) > 0 THEN
-					bo <= '1';
-				ELSE
-					bo <= '0';
-				END IF;
-			END IF; 
-		ELSIF Func_in(5 DOWNTO 3) = "000" THEN
-			IF Func_in(2 DOWNTO 0) = "100" THEN
-				wire <= std_logic_vector(signed(A_in) sll to_integer(signed(B_in)));
-				bo <= '0';
-				--jo <= '0';
-			ELSIF Func_in(2 DOWNTO 0) = "000" THEN
-				wire <= std_logic_vector(signed(A_in) sll to_integer(signed(B_in)));
-				bo <= '0';
-				--jo <= '0';
-			ELSIF Func_in(2 DOWNTO 0) = "110" THEN
-				wire <= std_logic_vector(signed(A_in) srl to_integer(signed(B_in)));
-				bo <= '0';
-				--jo <= '0';
-			ELSIF Func_in(2 DOWNTO 0) = "010" THEN
-				wire <= std_logic_vector(signed(A_in) srl to_integer(signed(B_in)));
-				bo <= '0';
-				--jo <= '0';
-			ELSIF Func_in(2 DOWNTO 0) = "111" THEN
-				wire <=  SHR(A_in,B_in);
-				bo <= '0';
-				--jo <= '0';
-			ELSIF Func_in(2 DOWNTO 0) = "011" THEN
-				wire <=  SHR(A_in,B_in);
-				bo <= '0';
-				--jo <= '0';
-			END IF;
+		
 		ELSIF Func_in(5 DOWNTO 3) = "111" THEN
 			IF Func_in(2 DOWNTO 0) = "000" THEN --BLT
 				wire <= A_in;
@@ -182,6 +119,30 @@ BEGIN
 					bo <= '0';
 				END IF;
 			END IF;
+			
+			
+	
+		ELSIF Func_in(5 DOWNTO 3) = "000" THEN
+			IF Func_in(2 DOWNTO 0) = "100" THEN
+				wire <= std_logic_vector(signed(A_in) sll to_integer(signed(B_in)));
+				bo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "000" THEN
+				wire <= std_logic_vector(signed(A_in) sll to_integer(signed(B_in)));
+				bo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "110" THEN
+				wire <= std_logic_vector(signed(A_in) srl to_integer(signed(B_in)));
+				bo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "010" THEN
+				wire <= std_logic_vector(signed(A_in) srl to_integer(signed(B_in)));
+				bo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "111" THEN
+				wire <=  SHR(A_in,B_in);
+				bo <= '0';
+			ELSIF Func_in(2 DOWNTO 0) = "011" THEN
+				wire <=  SHR(A_in,B_in);
+				bo <= '0';
+			END IF;
+
 		ELSE
 			bo <= '0';
 			--jo <= '0';

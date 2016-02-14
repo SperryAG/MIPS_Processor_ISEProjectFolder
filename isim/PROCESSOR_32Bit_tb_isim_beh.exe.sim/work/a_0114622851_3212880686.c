@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Andrew/Documents/ISEWorkspace/testgate/MIPS_Processor_ISEProjectFolder/SHIFTLEFTTWO_32Bit.vhd";
+static const char *ng0 = "C:/Users/David/Desktop/MIPS_Processor_ISEProjectFolder/SHIFTLEFTTWO_32Bit.vhd";
 extern char *IEEE_P_1242562249;
 
 char *ieee_p_1242562249_sub_2540846514_1035706684(char *, char *, char *, char *, int );
@@ -42,7 +42,7 @@ static void work_a_0114622851_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(26, ng0);
     t2 = (t0 + 1032U);
     t3 = *((char **)t2);
-    t2 = (t0 + 5264U);
+    t2 = (t0 + 5088U);
     t4 = ieee_p_1242562249_sub_2540846514_1035706684(IEEE_P_1242562249, t1, t3, t2, 2);
     t5 = (t0 + 3176);
     t6 = (t5 + 56U);

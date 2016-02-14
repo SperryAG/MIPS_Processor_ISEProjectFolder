@@ -57,7 +57,7 @@ BEGIN
 			t_JumpOrJRControl   <= '1';
 			t_LUIControl        <= '1';
 			t_Branch            <= '0';
-			t_MemToReg          <= '1';
+			t_MemToReg          <= '0';
 			t_MemWrite          <= '0';
 			t_DSize             <= "11";
 			t_ALUControl        <= Func;
@@ -171,12 +171,32 @@ BEGIN
 				t_JumpOrJRControl   <= '1';
 				t_LUIControl        <= '1';
 				t_Branch            <= '0';
-				t_MemToReg          <= '1';
-				t_MemWrite          <= '0';
+				t_MemToReg          <= '0';
+				t_MemWrite          <= '1';
 				t_DSize             <= "11";
-				t_ALUControl        <= Func;
+				t_ALUControl        <= "100000";
 				t_ALUSrc            <= '1';	
-				t_RegWrite          <= '1';		
+				t_RegWrite          <= '1';	
+		------- DP ADDED INSTRUCTION ----- 			
+			ELSIF (Op = "000100") THEN --BRANCH ON EQUAL-- IS ITYPE 
+				t_JALControl        <= '0';
+				t_RegDst            <= '0';
+				t_JALAddrControl    <= '0';
+				t_JALDataControl    <= '1';
+				t_ShiftValueControl <= '0';
+				t_LoadControl       <= '0';
+				t_JRControl         <= '0';
+				t_JumpOrJRControl   <= '1';
+				t_LUIControl        <= '1';
+				t_Branch            <= '1';
+				t_MemToReg          <= '0';
+				t_MemWrite          <= '1';
+				t_DSize             <= "11";
+				t_ALUControl        <= "111100";
+				t_ALUSrc            <= '1';	
+				t_RegWrite          <= '1';	
+			
+				
 			END IF;
        END IF;
 	END PROCESS;
