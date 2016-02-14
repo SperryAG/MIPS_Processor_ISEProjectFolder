@@ -831,7 +831,3 @@ at 0 ps, Instance /processor_32bit_tb/uut/Inst_ROM_512x32Bit/ : Warning: NUMERIC
 at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /processor_32bit_tb/uut/Inst_REGFILE_32BitX5Bit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
-ERROR: Index 512 out of bound 0 to 511. 
-ERROR: In process RAM_512x8Bit.vhd:35 
- 
-INFO: Simulator is stopped.

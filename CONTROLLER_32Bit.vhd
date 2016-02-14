@@ -190,11 +190,11 @@ BEGIN
 				t_LUIControl        <= '1';
 				t_Branch            <= '1';
 				t_MemToReg          <= '0';
-				t_MemWrite          <= '1';
+				t_MemWrite          <= '0';
 				t_DSize             <= "11";
 				t_ALUControl        <= "111100";
-				t_ALUSrc            <= '1';	
-				t_RegWrite          <= '1';	
+				t_ALUSrc            <= '0';	
+				t_RegWrite          <= '0';	
 			
 				
 			END IF;
